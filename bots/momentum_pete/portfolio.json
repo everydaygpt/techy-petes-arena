@@ -1,130 +1,190 @@
 {
   "starting_cash": 10000.0,
-  "cash": 2785.0798170925145,
-  "created_at": "2026-02-10T03:00:59.907347",
-  "last_updated": "2026-02-10T15:51:22.908045",
+  "cash": 40.0003364308198,
+  "created_at": "2026-02-10T16:56:55.443553",
+  "last_updated": "2026-02-10T16:57:07.723313",
   "positions": {
-    "NFLX": {
-      "symbol": "NFLX",
-      "quantity": 14.7293,
-      "entry_price": 81.47000122070312,
-      "entry_date": "2026-02-09T22:38:12.377449",
-      "asset_type": "stock",
-      "current_price": 82.375,
-      "high_since_entry": 84.20909881591797
-    },
     "NVDA": {
       "symbol": "NVDA",
-      "quantity": 6.2839,
-      "entry_price": 191.2801055908203,
-      "entry_date": "2026-02-10T09:30:11.716450",
+      "quantity": 6.3647,
+      "entry_price": 188.5399932861328,
+      "entry_date": "2026-02-10T16:57:07.719873",
       "asset_type": "stock",
-      "current_price": 188.7899932861328,
-      "high_since_entry": 191.2801055908203
-    },
-    "ADBE": {
-      "symbol": "ADBE",
-      "quantity": 4.5018,
-      "entry_price": 267.0,
-      "entry_date": "2026-02-10T09:30:11.718078",
-      "asset_type": "stock",
-      "current_price": 264.239990234375,
-      "high_since_entry": 269.5400085449219
-    },
-    "PYPL": {
-      "symbol": "PYPL",
-      "quantity": 29.4329,
-      "entry_price": 40.8380012512207,
-      "entry_date": "2026-02-10T09:30:11.719092",
-      "asset_type": "stock",
-      "current_price": 41.525001525878906,
-      "high_since_entry": 42.2599983215332
-    },
-    "XLV": {
-      "symbol": "XLV",
-      "quantity": 7.6716,
-      "entry_price": 156.67999267578125,
-      "entry_date": "2026-02-10T09:30:11.720073",
-      "asset_type": "etf",
-      "current_price": 155.50999450683594,
-      "high_since_entry": 156.80999755859375
+      "current_price": 188.5399932861328,
+      "high_since_entry": 188.5399932861328
     },
     "CRM": {
       "symbol": "CRM",
-      "quantity": 6.1986,
-      "entry_price": 194.72000122070312,
-      "entry_date": "2026-02-10T09:45:27.430295",
+      "quantity": 6.2032,
+      "entry_price": 193.4499969482422,
+      "entry_date": "2026-02-10T16:57:07.720734",
       "asset_type": "stock",
-      "current_price": 193.69500732421875,
-      "high_since_entry": 197.8699951171875
+      "current_price": 193.4499969482422,
+      "high_since_entry": 193.4499969482422
+    },
+    "ADBE": {
+      "symbol": "ADBE",
+      "quantity": 4.5339,
+      "entry_price": 264.6700134277344,
+      "entry_date": "2026-02-10T16:57:07.721339",
+      "asset_type": "stock",
+      "current_price": 264.6700134277344,
+      "high_since_entry": 264.6700134277344
+    },
+    "PYPL": {
+      "symbol": "PYPL",
+      "quantity": 28.9226,
+      "entry_price": 41.4900016784668,
+      "entry_date": "2026-02-10T16:57:07.721636",
+      "asset_type": "stock",
+      "current_price": 41.4900016784668,
+      "high_since_entry": 41.4900016784668
+    },
+    "ADA-USD": {
+      "symbol": "ADA-USD",
+      "quantity": 4588.2215,
+      "entry_price": 0.2615392506122589,
+      "entry_date": "2026-02-10T16:57:07.721932",
+      "asset_type": "crypto",
+      "current_price": 0.2615392506122589,
+      "high_since_entry": 0.2615392506122589
+    },
+    "SOL-USD": {
+      "symbol": "SOL-USD",
+      "quantity": 14.5736,
+      "entry_price": 82.34074401855469,
+      "entry_date": "2026-02-10T16:57:07.722235",
+      "asset_type": "crypto",
+      "current_price": 82.34074401855469,
+      "high_since_entry": 82.34074401855469
+    },
+    "DOT-USD": {
+      "symbol": "DOT-USD",
+      "quantity": 942.065,
+      "entry_price": 1.2737973928451538,
+      "entry_date": "2026-02-10T16:57:07.722555",
+      "asset_type": "crypto",
+      "current_price": 1.2737973928451538,
+      "high_since_entry": 1.2737973928451538
+    },
+    "DOGE-USD": {
+      "symbol": "DOGE-USD",
+      "quantity": 12949.7876,
+      "entry_price": 0.09266561269760132,
+      "entry_date": "2026-02-10T16:57:07.722933",
+      "asset_type": "crypto",
+      "current_price": 0.09266561269760132,
+      "high_since_entry": 0.09266561269760132
+    },
+    "SHIB-USD": {
+      "symbol": "SHIB-USD",
+      "quantity": 60021487.5308,
+      "entry_price": 5.9979024626954924e-06,
+      "entry_date": "2026-02-10T16:57:07.723309",
+      "asset_type": "crypto",
+      "current_price": 5.9979024626954924e-06,
+      "high_since_entry": 5.9979024626954924e-06
     }
   },
   "trade_history": [
     {
-      "timestamp": "2026-02-09T22:38:12.377466",
-      "action": "BUY",
-      "symbol": "NFLX",
-      "quantity": 14.7293,
-      "price": 81.47000122070312,
-      "total": 1199.9960889801025,
-      "asset_type": "stock",
-      "reason": "RSI oversold (32.1) | MACD momentum increasing",
-      "cash_after": 8800.003911019898
-    },
-    {
-      "timestamp": "2026-02-10T09:30:11.716464",
+      "timestamp": "2026-02-10T16:57:07.719881",
       "action": "BUY",
       "symbol": "NVDA",
-      "quantity": 6.2839,
-      "price": 191.2801055908203,
-      "total": 1201.9850555221558,
+      "quantity": 6.3647,
+      "price": 188.5399932861328,
+      "total": 1200.0004952682496,
       "asset_type": "stock",
-      "reason": "MACD bullish crossover | Price above rising MAs (bullish trend) | EMA9 crossed above SMA20",
-      "cash_after": 7598.018855497742
+      "reason": "MACD bullish crossover | Price above rising MAs (bullish trend) | Strong short-term momentum (+4.5% in 5d)",
+      "cash_after": 8799.99950473175
     },
     {
-      "timestamp": "2026-02-10T09:30:11.718088",
-      "action": "BUY",
-      "symbol": "ADBE",
-      "quantity": 4.5018,
-      "price": 267.0,
-      "total": 1201.9806,
-      "asset_type": "stock",
-      "reason": "RSI oversold (31.0) | Price near lower Bollinger Band (0.09)",
-      "cash_after": 6396.038255497742
-    },
-    {
-      "timestamp": "2026-02-10T09:30:11.719100",
-      "action": "BUY",
-      "symbol": "PYPL",
-      "quantity": 29.4329,
-      "price": 40.8380012512207,
-      "total": 1201.9808070270537,
-      "asset_type": "stock",
-      "reason": "RSI oversold (12.5) | Price near lower Bollinger Band (0.14)",
-      "cash_after": 5194.0574484706885
-    },
-    {
-      "timestamp": "2026-02-10T09:30:11.720081",
-      "action": "BUY",
-      "symbol": "XLV",
-      "quantity": 7.6716,
-      "price": 156.67999267578125,
-      "total": 1201.9862318115233,
-      "asset_type": "etf",
-      "reason": "MACD bullish crossover",
-      "cash_after": 3992.071216659165
-    },
-    {
-      "timestamp": "2026-02-10T09:45:27.430310",
+      "timestamp": "2026-02-10T16:57:07.720738",
       "action": "BUY",
       "symbol": "CRM",
-      "quantity": 6.1986,
-      "price": 194.72000122070312,
-      "total": 1206.9913995666504,
+      "quantity": 6.2032,
+      "price": 193.4499969482422,
+      "total": 1200.0090210693359,
       "asset_type": "stock",
-      "reason": "RSI oversold (26.9) | Price near lower Bollinger Band (0.18)",
-      "cash_after": 2785.0798170925145
+      "reason": "RSI oversold (25.8) | Price near lower Bollinger Band (0.16)",
+      "cash_after": 7599.990483662414
+    },
+    {
+      "timestamp": "2026-02-10T16:57:07.721343",
+      "action": "BUY",
+      "symbol": "ADBE",
+      "quantity": 4.5339,
+      "price": 264.6700134277344,
+      "total": 1199.987373880005,
+      "asset_type": "stock",
+      "reason": "RSI oversold (30.0) | Price near lower Bollinger Band (0.06)",
+      "cash_after": 6400.0031097824085
+    },
+    {
+      "timestamp": "2026-02-10T16:57:07.721640",
+      "action": "BUY",
+      "symbol": "PYPL",
+      "quantity": 28.9226,
+      "price": 41.4900016784668,
+      "total": 1199.9987225456237,
+      "asset_type": "stock",
+      "reason": "RSI oversold (14.2) | Price near lower Bollinger Band (0.16)",
+      "cash_after": 5200.004387236785
+    },
+    {
+      "timestamp": "2026-02-10T16:57:07.721935",
+      "action": "BUY",
+      "symbol": "ADA-USD",
+      "quantity": 4588.2215,
+      "price": 0.2615392506122589,
+      "total": 1200.0000127530543,
+      "asset_type": "crypto",
+      "reason": "RSI oversold (23.6) | Price near lower Bollinger Band (0.20)",
+      "cash_after": 4000.0043744837308
+    },
+    {
+      "timestamp": "2026-02-10T16:57:07.722238",
+      "action": "BUY",
+      "symbol": "SOL-USD",
+      "quantity": 14.5736,
+      "price": 82.34074401855469,
+      "total": 1200.0010670288086,
+      "asset_type": "crypto",
+      "reason": "RSI oversold (18.4) | Price near lower Bollinger Band (0.17)",
+      "cash_after": 2800.003307454922
+    },
+    {
+      "timestamp": "2026-02-10T16:57:07.722557",
+      "action": "BUY",
+      "symbol": "DOT-USD",
+      "quantity": 942.065,
+      "price": 1.2737973928451538,
+      "total": 1199.99994089067,
+      "asset_type": "crypto",
+      "reason": "RSI oversold (18.3) | Price near lower Bollinger Band (0.16)",
+      "cash_after": 1600.003366564252
+    },
+    {
+      "timestamp": "2026-02-10T16:57:07.722936",
+      "action": "BUY",
+      "symbol": "DOGE-USD",
+      "quantity": 12949.7876,
+      "price": 0.09266561269760132,
+      "total": 1200.0000022578001,
+      "asset_type": "crypto",
+      "reason": "RSI oversold (22.8) | Price near lower Bollinger Band (0.16)",
+      "cash_after": 400.0033643064519
+    },
+    {
+      "timestamp": "2026-02-10T16:57:07.723311",
+      "action": "BUY",
+      "symbol": "SHIB-USD",
+      "quantity": 60021487.5308,
+      "price": 5.9979024626954924e-06,
+      "total": 360.0030278756321,
+      "asset_type": "crypto",
+      "reason": "RSI oversold (0.0) | Price near lower Bollinger Band (0.18)",
+      "cash_after": 40.0003364308198
     }
   ]
 }

@@ -1,30 +1,30 @@
 {
   "starting_cash": 10000.0,
-  "cash": 8500.000539967346,
-  "created_at": "2026-02-10T03:00:59.913309",
-  "last_updated": "2026-02-10T15:51:30.481343",
+  "cash": 8499.994667414856,
+  "created_at": "2026-02-10T16:56:55.446636",
+  "last_updated": "2026-02-10T16:57:13.186005",
   "positions": {
     "NVDA": {
       "symbol": "NVDA",
-      "quantity": 7.8419,
-      "entry_price": 191.2801055908203,
-      "entry_date": "2026-02-10T09:30:18.354279",
+      "quantity": 7.9559,
+      "entry_price": 188.5399932861328,
+      "entry_date": "2026-02-10T16:57:13.185997",
       "asset_type": "stock",
-      "current_price": 188.7899932861328,
-      "high_since_entry": 191.2801055908203
+      "current_price": 188.5399932861328,
+      "high_since_entry": 188.5399932861328
     }
   },
   "trade_history": [
     {
-      "timestamp": "2026-02-10T09:30:18.354289",
+      "timestamp": "2026-02-10T16:57:13.186003",
       "action": "BUY",
       "symbol": "NVDA",
-      "quantity": 7.8419,
-      "price": 191.2801055908203,
-      "total": 1499.9994600326538,
+      "quantity": 7.9559,
+      "price": 188.5399932861328,
+      "total": 1500.005332585144,
       "asset_type": "stock",
-      "reason": "MACD bullish crossover | Price above rising MAs (bullish trend) | EMA9 crossed above SMA20",
-      "cash_after": 8500.000539967346
+      "reason": "MACD bullish crossover | Price above rising MAs (bullish trend) | Strong short-term momentum (+4.5% in 5d)",
+      "cash_after": 8499.994667414856
     }
   ]
 }
