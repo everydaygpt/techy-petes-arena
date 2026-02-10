@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techy Pete's 5-Bot Arena</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0"></script>
+    <style>
+        :root {
+            --bg-dark: #0d1117; --bg-card: #161b22; --bg-hover: #1c2333;
+            --border: #30363d; --text: #e6edf3; --text-sec: #8b949e; --text-muted: #484f58;
+            --green: #3fb950; --red: #f85149; --cyan: #39d2c0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.5; }
+        .dashboard { max-width: 1440px; margin: 0 auto; padding: 20px; }
+
+        .header { text-align: center; padding: 28px; background: linear-gradient(135deg, #161b22 0%, #1a2332 100%); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 24px; }
+        .logo { font-size: 32px; font-weight: 800; letter-spacing: 2px; background: linear-gradient(135deg, var(--cyan), #58a6ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .logo-sub { font-size: 14px; color: var(--text-sec); letter-spacing: 3px; text-transform: uppercase; margin-top: 4px; }
+        .last-update { font-size: 12px; color: var(--text-muted); margin-top: 8px; }
+
+        .leaderboard { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 24px; }
+        .leader-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 18px; text-align: center; position: relative; overflow: hidden; transition: transform 0.2s; }
+        .leader-card:hover { transform: translateY(-2px); }
+        .leader-card .rank-stripe { position: absolute; top: 0; left: 0; right: 0; height: 4px; }
+        .leader-card .rank { font-size: 28px; margin-bottom: 4px; }
+        .leader-card .bot-name { font-size: 14px; font-weight: 700; margin-bottom: 8px; }
+        .leader-card .bot-value { font-size: 22px; font-weight: 700; font-variant-numeric: tabular-nums; }
+        .leader-card .bot-return { font-size: 15px; font-weight: 700; margin: 4px 0; }
+        .leader-card .bot-stats { font-size: 11px; color: var(--text-sec); }
+        .positive { color: var(--green); } .negative { color: var(--red); }
+
+        .chart-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; margin-bottom: 24px; }
+        .chart-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; }
+        .chart-card h3 { font-size: 13px; color: var(--text-sec); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; }
+        .chart-card canvas { max-height: 320px; }
+        .full-width { grid-column: 1 / -1; }
+
+        .matrix-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-bottom: 24px; overflow-x: auto; }
+        .matrix-card h3 { font-size: 13px; color: var(--text-sec); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; }
+        table { width: 100%; border-collapse: collapse; font-size: 12px; }
+        thead th { text-align: left; padding: 8px 10px; border-bottom: 2px solid var(--border); color: var(--text-sec); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap; }
+        tbody td { padding: 8px 10px; border-bottom: 1px solid rgba(48,54,61,0.5); font-variant-numeric: tabular-nums; }
+        tbody tr:hover { background: var(--bg-hover); }
+        .symbol-badge { font-weight: 700; color: #58a6ff; }
+        .held { text-align: center; font-size: 16px; } .not-held { text-align: center; color: var(--text-muted); }
+
+        .bots-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+        .bot-detail-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 18px; }
+        .bot-detail-card h4 { font-size: 15px; margin-bottom: 4px; }
+        .bot-detail-card .desc { font-size: 12px; color: var(--text-sec); margin-bottom: 12px; }
+        .mini-table { width: 100%; font-size: 11px; }
+        .mini-table th { padding: 4px 6px; text-align: left; color: var(--text-sec); font-size: 10px; text-transform: uppercase; border-bottom: 1px solid var(--border); }
+        .mini-table td { padding: 4px 6px; border-bottom: 1px solid rgba(48,54,61,0.3); }
+        .action-buy { color: var(--green); font-weight: 700; } .action-sell { color: var(--red); font-weight: 700; }
+
+        .footer { text-align: center; padding: 20px; color: var(--text-muted); font-size: 12px; }
+
+        @media (max-width: 1000px) { .leaderboard { grid-template-columns: repeat(2, 1fr); } .chart-grid { grid-template-columns: 1fr; } .bots-detail { grid-template-columns: 1fr; } }
+        @media (max-width: 600px) { .leaderboard { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+<div class="dashboard">
+    <div class="header">
+        <div class="logo">TECHY PETE'S</div>
+        <div class="logo-sub">5-Bot Investment Arena</div>
+        <div class="last-update">Last Updated: 2026-02-10 03:01:23</div>
+    </div>
+
+    <!-- Leaderboard -->
+    <div class="leaderboard">
+        <div class="leader-card">
+            <div class="rank-stripe" style="background:#58a6ff"></div>
+            <div class="rank">🥇</div>
+            <div class="bot-name" style="color:#58a6ff">🚀 Momentum Pete</div>
+            <div class="bot-value">$10,000.00</div>
+            <div class="bot-return positive">+0.00%</div>
+            <div class="bot-stats">0 positions &middot; 0 trades &middot; 0% win</div>
+        </div>
+        <div class="leader-card">
+            <div class="rank-stripe" style="background:#3fb950"></div>
+            <div class="rank">🥈</div>
+            <div class="bot-name" style="color:#3fb950">🛡️ Cautious Carl</div>
+            <div class="bot-value">$10,000.00</div>
+            <div class="bot-return positive">+0.00%</div>
+            <div class="bot-stats">0 positions &middot; 0 trades &middot; 0% win</div>
+        </div>
+        <div class="leader-card">
+            <div class="rank-stripe" style="background:#bc8cff"></div>
+            <div class="rank">🥉</div>
+            <div class="bot-name" style="color:#bc8cff">🔄 Mean Reversion Mary</div>
+            <div class="bot-value">$10,000.00</div>
+            <div class="bot-return positive">+0.00%</div>
+            <div class="bot-stats">0 positions &middot; 0 trades &middot; 0% win</div>
+        </div>
+        <div class="leader-card">
+            <div class="rank-stripe" style="background:#f0883e"></div>
+            <div class="rank">4th</div>
+            <div class="bot-name" style="color:#f0883e">📊 Volume Victor</div>
+            <div class="bot-value">$10,000.00</div>
+            <div class="bot-return positive">+0.00%</div>
+            <div class="bot-stats">0 positions &middot; 0 trades &middot; 0% win</div>
+        </div>
+        <div class="leader-card">
+            <div class="rank-stripe" style="background:#f85149"></div>
+            <div class="rank">5th</div>
+            <div class="bot-name" style="color:#f85149">🎲 YOLO Yolanda</div>
+            <div class="bot-value">$10,000.00</div>
+            <div class="bot-return positive">+0.00%</div>
+            <div class="bot-stats">0 positions &middot; 0 trades &middot; 0% win</div>
+        </div>
+    </div>
+
+    <!-- Charts -->
+    <div class="chart-grid">
+        <div class="chart-card">
+            <h3>Equity Curves (Head-to-Head)</h3>
+            <canvas id="equity-chart"></canvas>
+        </div>
+        <div class="chart-card">
+            <h3>Return % Comparison</h3>
+            <canvas id="return-chart"></canvas>
+        </div>
+    </div><div class="bots-detail">
+        <div class="bot-detail-card">
+            <h4 style="color:#58a6ff">🚀 Momentum Pete</h4>
+            <div class="desc">Rides trends hard with lower entry thresholds and wider stops to let winners run</div><div style="color:var(--text-muted);font-size:12px;padding:12px 0">No trades yet</div></div>
+        <div class="bot-detail-card">
+            <h4 style="color:#3fb950">🛡️ Cautious Carl</h4>
+            <div class="desc">Only enters on very strong signals with tight risk management</div><div style="color:var(--text-muted);font-size:12px;padding:12px 0">No trades yet</div></div>
+        <div class="bot-detail-card">
+            <h4 style="color:#bc8cff">🔄 Mean Reversion Mary</h4>
+            <div class="desc">Buys oversold dips and sells overbought rips for quick flips</div><div style="color:var(--text-muted);font-size:12px;padding:12px 0">No trades yet</div></div>
+        <div class="bot-detail-card">
+            <h4 style="color:#f0883e">📊 Volume Victor</h4>
+            <div class="desc">Only trades when volume confirms the move, follows smart money</div><div style="color:var(--text-muted);font-size:12px;padding:12px 0">No trades yet</div></div>
+        <div class="bot-detail-card">
+            <h4 style="color:#f85149">🎲 YOLO Yolanda</h4>
+            <div class="desc">Aggressive trader chasing big swings with crypto-heavy focus</div><div style="color:var(--text-muted);font-size:12px;padding:12px 0">No trades yet</div></div></div>
+    <div class="footer">
+        Techy Pete's Investment App &mdash; 5-Bot Arena &mdash; Simulated trading with real market data &mdash; Not financial advice
+    </div>
+</div>
+
+<script>
+    const RESULTS = [{"bot_id": "momentum_pete", "bot_name": "Momentum Pete", "color": "#58a6ff", "emoji": "\ud83d\ude80", "total_value": 10000.0, "total_return_pct": 0.0, "total_pnl": 0.0}, {"bot_id": "cautious_carl", "bot_name": "Cautious Carl", "color": "#3fb950", "emoji": "\ud83d\udee1\ufe0f", "total_value": 10000.0, "total_return_pct": 0.0, "total_pnl": 0.0}, {"bot_id": "mean_reversion_mary", "bot_name": "Mean Reversion Mary", "color": "#bc8cff", "emoji": "\ud83d\udd04", "total_value": 10000.0, "total_return_pct": 0.0, "total_pnl": 0.0}, {"bot_id": "volume_victor", "bot_name": "Volume Victor", "color": "#f0883e", "emoji": "\ud83d\udcca", "total_value": 10000.0, "total_return_pct": 0.0, "total_pnl": 0.0}, {"bot_id": "yolo_yolanda", "bot_name": "YOLO Yolanda", "color": "#f85149", "emoji": "\ud83c\udfb2", "total_value": 10000.0, "total_return_pct": 0.0, "total_pnl": 0.0}];
+    const HISTORIES = {"momentum_pete": [{"timestamp": "2026-02-10T03:00:59.908525", "total_value": 10000.0, "cash": 10000.0, "positions_value": 0, "num_positions": 0}], "cautious_carl": [{"timestamp": "2026-02-10T03:00:59.910570", "total_value": 10000.0, "cash": 10000.0, "positions_value": 0, "num_positions": 0}], "mean_reversion_mary": [{"timestamp": "2026-02-10T03:00:59.912251", "total_value": 10000.0, "cash": 10000.0, "positions_value": 0, "num_positions": 0}], "volume_victor": [{"timestamp": "2026-02-10T03:00:59.915040", "total_value": 10000.0, "cash": 10000.0, "positions_value": 0, "num_positions": 0}], "yolo_yolanda": [{"timestamp": "2026-02-10T03:00:59.916921", "total_value": 10000.0, "cash": 10000.0, "positions_value": 0, "num_positions": 0}]};
+    const STARTING_CASH = 10000;
+    
+    // Colors
+    const GRID_COLOR = 'rgba(48, 54, 61, 0.5)';
+    const TEXT_COLOR = '#8b949e';
+
+    // Equity Curves
+    (function() {
+        const ctx = document.getElementById('equity-chart').getContext('2d');
+        const datasets = [];
+
+        for (const r of RESULTS) {
+            const hist = HISTORIES[r.bot_id] || [];
+            if (hist.length === 0) {
+                datasets.push({
+                    label: r.emoji + ' ' + r.bot_name,
+                    data: [{ x: new Date(), y: STARTING_CASH }],
+                    borderColor: r.color,
+                    borderWidth: 2, fill: false, tension: 0.3, pointRadius: 0, pointHoverRadius: 4,
+                });
+            } else {
+                datasets.push({
+                    label: r.emoji + ' ' + r.bot_name,
+                    data: hist.map(h => ({ x: new Date(h.timestamp), y: h.total_value })),
+                    borderColor: r.color,
+                    borderWidth: 2, fill: false, tension: 0.3, pointRadius: hist.length > 20 ? 0 : 2, pointHoverRadius: 5,
+                });
+            }
+        }
+
+        // Baseline
+        const allDates = [];
+        for (const r of RESULTS) {
+            const hist = HISTORIES[r.bot_id] || [];
+            hist.forEach(h => allDates.push(new Date(h.timestamp)));
+        }
+        if (allDates.length > 0) {
+            const minDate = new Date(Math.min(...allDates));
+            const maxDate = new Date(Math.max(...allDates));
+            datasets.push({
+                label: 'Starting Capital',
+                data: [{ x: minDate, y: STARTING_CASH }, { x: maxDate, y: STARTING_CASH }],
+                borderColor: TEXT_COLOR, borderWidth: 1, borderDash: [5, 5], pointRadius: 0, fill: false,
+            });
+        }
+
+        new Chart(ctx, {
+            type: 'line',
+            data: { datasets },
+            options: {
+                responsive: true, maintainAspectRatio: false,
+                interaction: { mode: 'index', intersect: false },
+                plugins: {
+                    legend: { labels: { color: TEXT_COLOR, usePointStyle: true, padding: 12, font: { size: 11 } } },
+                    tooltip: {
+                        backgroundColor: '#1c2333', borderColor: GRID_COLOR, borderWidth: 1,
+                        titleColor: '#e6edf3', bodyColor: '#e6edf3',
+                        callbacks: { label: ctx => ctx.dataset.label + ': $' + ctx.parsed.y.toLocaleString(undefined, { minimumFractionDigits: 2 }) }
+                    }
+                },
+                scales: {
+                    x: { type: 'time', time: { unit: 'day', displayFormats: { day: 'MMM d' } }, grid: { color: GRID_COLOR }, ticks: { color: TEXT_COLOR } },
+                    y: { grid: { color: GRID_COLOR }, ticks: { color: TEXT_COLOR, callback: v => '$' + v.toLocaleString() } }
+                }
+            }
+        });
+    })();
+
+    // Return % Bar Chart
+    (function() {
+        const ctx = document.getElementById('return-chart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: RESULTS.map(r => r.emoji + ' ' + r.bot_name.split(' ')[0]),
+                datasets: [{
+                    label: 'Return %',
+                    data: RESULTS.map(r => r.total_return_pct),
+                    backgroundColor: RESULTS.map(r => r.total_return_pct >= 0 ? r.color + 'AA' : '#f85149AA'),
+                    borderColor: RESULTS.map(r => r.color),
+                    borderWidth: 1, borderRadius: 4,
+                }]
+            },
+            options: {
+                responsive: true, maintainAspectRatio: false, indexAxis: 'y',
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        backgroundColor: '#1c2333', borderColor: GRID_COLOR, borderWidth: 1,
+                        titleColor: '#e6edf3', bodyColor: '#e6edf3',
+                        callbacks: { label: ctx => { const r = RESULTS[ctx.dataIndex]; return [r.bot_name + ': ' + r.total_return_pct.toFixed(2) + '%', 'P&L: $' + r.total_pnl.toFixed(2)]; } }
+                    }
+                },
+                scales: {
+                    x: { grid: { color: GRID_COLOR }, ticks: { color: TEXT_COLOR, callback: v => v + '%' } },
+                    y: { grid: { display: false }, ticks: { color: TEXT_COLOR, font: { size: 12, weight: 'bold' } } }
+                }
+            }
+        });
+    })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+    "bot_name": "Cautious Carl",
+    "bot_description": "Only enters on very strong signals with tight risk management",
+    "starting_cash": 10000.00,
+    "max_position_pct": 0.20,
+    "max_positions": 6,
+    "stop_loss_pct": 0.03,
+    "take_profit_pct": 0.08,
+    "trailing_stop_pct": 0.02,
+    "watchlist": {
+        "stocks": ["AAPL", "MSFT", "GOOGL", "AMZN", "JNJ", "V", "WMT", "DIS", "BA", "GE", "KO", "PG", "CVX", "XOM", "MCD"],
+        "etfs": ["SPY", "QQQ", "VTI", "BND", "SCHB", "SCHF", "SCHA", "SCHD", "SCHM", "SCHV"],
+        "crypto": []
+    },
+    "strategy": {
+        "rsi_oversold": 25,
+        "rsi_overbought": 75,
+        "rsi_period": 14,
+        "macd_fast": 12,
+        "macd_slow": 26,
+        "macd_signal": 9,
+        "bollinger_period": 20,
+        "bollinger_std": 2,
+        "volume_spike_multiplier": 1.8,
+        "min_signal_strength": 3.0,
+        "lookback_days": 60
+    }
+}

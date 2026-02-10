@@ -1,0 +1,37 @@
+{
+    "starting_cash": 10000.00,
+    "max_position_pct": 0.15,
+    "max_positions": 12,
+    "stop_loss_pct": 0.05,
+    "take_profit_pct": 0.10,
+    "trailing_stop_pct": 0.03,
+    "watchlist": {
+        "stocks": ["AAPL", "MSFT", "NVDA", "TSLA", "META", "AMZN", "GOOGL", "AMD", "NFLX", "CRM"],
+        "etfs": ["SPY", "QQQ", "IWM", "XLF", "XLE", "ARKK"],
+        "crypto": ["BTC-USD", "ETH-USD", "SOL-USD", "DOGE-USD"]
+    },
+    "strategy": {
+        "rsi_oversold": 30,
+        "rsi_overbought": 70,
+        "rsi_period": 14,
+        "macd_fast": 12,
+        "macd_slow": 26,
+        "macd_signal": 9,
+        "bollinger_period": 20,
+        "bollinger_std": 2,
+        "volume_spike_multiplier": 1.5,
+        "min_signal_strength": 2,
+        "lookback_days": 60
+    },
+    "live_trading": {
+        "scan_interval_minutes": 15,
+        "extended_hours": false,
+        "crypto_247": true,
+        "timezone_offset": -5,
+        "timezone_note": "Set to -5 for EST or -4 for EDT (daylight saving)"
+    },
+    "dashboard": {
+        "refresh_note": "Run 'python live_trader.py' to start live trading",
+        "theme": "dark"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "bot_name": "Volume Victor",
+    "bot_description": "Only trades when volume confirms the move, follows smart money",
+    "starting_cash": 10000.00,
+    "max_position_pct": 0.15,
+    "max_positions": 8,
+    "stop_loss_pct": 0.05,
+    "take_profit_pct": 0.12,
+    "trailing_stop_pct": 0.035,
+    "watchlist": {
+        "stocks": ["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA", "NVDA", "META", "JPM", "BAC", "WFC", "GS", "MS", "C", "USB", "PNC"],
+        "etfs": ["SPY", "QQQ", "VTI", "VOO", "VTSAX", "BRK.B", "IVV", "SCHX", "SPLG", "ITOT"],
+        "crypto": []
+    },
+    "strategy": {
+        "rsi_oversold": 30,
+        "rsi_overbought": 70,
+        "rsi_period": 14,
+        "macd_fast": 12,
+        "macd_slow": 26,
+        "macd_signal": 9,
+        "bollinger_period": 20,
+        "bollinger_std": 2,
+        "volume_spike_multiplier": 2.0,
+        "min_signal_strength": 2.5,
+        "lookback_days": 60
+    }
+}

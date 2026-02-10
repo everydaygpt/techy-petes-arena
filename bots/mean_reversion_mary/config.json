@@ -1,0 +1,28 @@
+{
+    "bot_name": "Mean Reversion Mary",
+    "bot_description": "Buys oversold dips and sells overbought rips for quick flips",
+    "starting_cash": 10000.00,
+    "max_position_pct": 0.12,
+    "max_positions": 10,
+    "stop_loss_pct": 0.04,
+    "take_profit_pct": 0.06,
+    "trailing_stop_pct": 0.025,
+    "watchlist": {
+        "stocks": ["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA", "NVDA", "META", "NFLX", "AMD", "CRM", "INTC", "IBM", "CSCO", "ORCL", "ADBE"],
+        "etfs": ["SPY", "QQQ", "IWM", "EFA", "AGG", "GLD", "XLF", "XLE", "XLV", "XLI"],
+        "crypto": ["BTC", "ETH", "ADA", "XRP", "SOL"]
+    },
+    "strategy": {
+        "rsi_oversold": 25,
+        "rsi_overbought": 75,
+        "rsi_period": 14,
+        "macd_fast": 12,
+        "macd_slow": 26,
+        "macd_signal": 9,
+        "bollinger_period": 20,
+        "bollinger_std": 2.5,
+        "volume_spike_multiplier": 1.5,
+        "min_signal_strength": 2.0,
+        "lookback_days": 60
+    }
+}
