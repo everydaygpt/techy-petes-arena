@@ -159,6 +159,7 @@ def generate_comparison_dashboard(results=None, bot_roster=None):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="120">
     <title>Techy Pete's 5-Bot Arena</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0"></script>

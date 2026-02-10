@@ -86,6 +86,65 @@ def deploy():
         return False, f"Deploy error: {str(e)[:100]}"
 
 
+def deploy_verbose():
+    """Same as deploy() but prints git output so you can see what's happening."""
+    try:
+        # Stage ALL changed files (dashboards + bot data)
+        print("        git add -A ...")
+        result = subprocess.run(
+            ["git", "add", "-A"],
+            cwd=str(PLATFORM_DIR),
+            capture_output=True, text=True, timeout=30,
+        )
+        if result.returncode != 0:
+            print(f"        git add stderr: {result.stderr}")
+            return False, f"git add failed: {result.stderr[:100]}"
+
+        # Check for changes
+        result = subprocess.run(
+            ["git", "diff", "--cached", "--stat"],
+            cwd=str(PLATFORM_DIR),
+            capture_output=True, text=True,
+        )
+        if not result.stdout.strip():
+            return True, "No changes to deploy"
+        print(f"        Changes: {result.stdout.strip().split(chr(10))[-1]}")
+
+        # Commit
+        now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+        commit_msg = f"Bot update {now}"
+        print(f"        git commit -m '{commit_msg}' ...")
+        result = subprocess.run(
+            ["git", "commit", "-m", commit_msg],
+            cwd=str(PLATFORM_DIR),
+            capture_output=True, text=True, timeout=30,
+        )
+        if result.returncode != 0:
+            print(f"        Commit stderr: {result.stderr}")
+            return False, f"Commit failed: {result.stderr[:100]}"
+        print(f"        Committed OK")
+
+        # Push
+        print(f"        git push ...")
+        result = subprocess.run(
+            ["git", "push"],
+            cwd=str(PLATFORM_DIR),
+            capture_output=True, text=True, timeout=60,
+        )
+        if result.returncode != 0:
+            print(f"        Push stderr: {result.stderr}")
+            return False, f"Push failed: {result.stderr[:100]}"
+        print(f"        Push OK: {result.stderr.strip().split(chr(10))[-1] if result.stderr else 'done'}")
+
+        return True, f"Deployed at {now}"
+
+    except subprocess.TimeoutExpired:
+        return False, "Deploy timed out"
+    except Exception as e:
+        import traceback; traceback.print_exc()
+        return False, f"Deploy error: {str(e)[:100]}"
+
+
 if __name__ == "__main__":
-    success, msg = deploy()
+    success, msg = deploy_verbose()
     print(f"  {'[OK]' if success else '[FAIL]'} {msg}")

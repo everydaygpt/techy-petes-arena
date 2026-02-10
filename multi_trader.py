@@ -286,6 +286,45 @@ def main():
         show_status()
         return
 
+    if "--test" in args:
+        print("  [TEST MODE] Testing the full pipeline...\n")
+
+        # 1. Regenerate dashboard from current bot data
+        print("  [1/3] Regenerating dashboard from current data...")
+        try:
+            dashboard_path = generate_comparison_dashboard()
+            print(f"        Dashboard saved: {dashboard_path}")
+        except Exception as e:
+            print(f"        Dashboard FAILED: {e}")
+            import traceback; traceback.print_exc()
+            return
+
+        # 2. Deploy to GitHub
+        print("  [2/3] Pushing to GitHub Pages...")
+        try:
+            from deploy import deploy_verbose
+            success, msg = deploy_verbose()
+            print(f"        {'[OK]' if success else '[FAIL]'} {msg}")
+        except ImportError:
+            # Fallback to regular deploy with manual output
+            from deploy import deploy
+            success, msg = deploy()
+            print(f"        {'[OK]' if success else '[FAIL]'} {msg}")
+        except Exception as e:
+            print(f"        Deploy FAILED: {e}")
+            import traceback; traceback.print_exc()
+            return
+
+        # 3. Confirm
+        if success:
+            print("  [3/3] Deployed! Check your dashboard in ~30 seconds:")
+            print("        https://everydaygpt.github.io/techy-petes-arena/arena_dashboard.html")
+            print("\n        (Dashboard now auto-refreshes every 2 minutes)")
+        else:
+            print("  [3/3] Deploy failed. Try manually:")
+            print("        git add -A && git commit -m 'update' && git push")
+        return
+
     interval_min = 15
     scan_only = "--scan-only" in args
     run_once = "--once" in args
