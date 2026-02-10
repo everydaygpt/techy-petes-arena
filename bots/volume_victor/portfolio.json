@@ -1,30 +1,8 @@
 {
   "starting_cash": 10000.0,
-  "cash": 8499.994667414856,
-  "created_at": "2026-02-10T16:56:55.446636",
-  "last_updated": "2026-02-10T16:57:13.186005",
-  "positions": {
-    "NVDA": {
-      "symbol": "NVDA",
-      "quantity": 7.9559,
-      "entry_price": 188.5399932861328,
-      "entry_date": "2026-02-10T16:57:13.185997",
-      "asset_type": "stock",
-      "current_price": 188.5399932861328,
-      "high_since_entry": 188.5399932861328
-    }
-  },
-  "trade_history": [
-    {
-      "timestamp": "2026-02-10T16:57:13.186003",
-      "action": "BUY",
-      "symbol": "NVDA",
-      "quantity": 7.9559,
-      "price": 188.5399932861328,
-      "total": 1500.005332585144,
-      "asset_type": "stock",
-      "reason": "MACD bullish crossover | Price above rising MAs (bullish trend) | Strong short-term momentum (+4.5% in 5d)",
-      "cash_after": 8499.994667414856
-    }
-  ]
+  "cash": 10000.0,
+  "created_at": "2026-02-10T17:00:53.480207",
+  "last_updated": "2026-02-10T17:00:53.480207",
+  "positions": {},
+  "trade_history": []
 }
