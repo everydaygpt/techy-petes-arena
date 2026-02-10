@@ -2,7 +2,7 @@
   "starting_cash": 10000.0,
   "cash": 2785.0798170925145,
   "created_at": "2026-02-10T03:00:59.907347",
-  "last_updated": "2026-02-10T11:01:39.610193",
+  "last_updated": "2026-02-10T11:16:55.354360",
   "positions": {
     "NFLX": {
       "symbol": "NFLX",
@@ -10,7 +10,7 @@
       "entry_price": 81.47000122070312,
       "entry_date": "2026-02-09T22:38:12.377449",
       "asset_type": "stock",
-      "current_price": 83.57499694824219,
+      "current_price": 83.38990020751953,
       "high_since_entry": 84.20909881591797
     },
     "NVDA": {
@@ -19,7 +19,7 @@
       "entry_price": 191.2801055908203,
       "entry_date": "2026-02-10T09:30:11.716450",
       "asset_type": "stock",
-      "current_price": 190.0749969482422,
+      "current_price": 189.65499877929688,
       "high_since_entry": 191.2801055908203
     },
     "ADBE": {
@@ -28,7 +28,7 @@
       "entry_price": 267.0,
       "entry_date": "2026-02-10T09:30:11.718078",
       "asset_type": "stock",
-      "current_price": 269.30279541015625,
+      "current_price": 269.5150146484375,
       "high_since_entry": 269.5400085449219
     },
     "PYPL": {
@@ -37,8 +37,8 @@
       "entry_price": 40.8380012512207,
       "entry_date": "2026-02-10T09:30:11.719092",
       "asset_type": "stock",
-      "current_price": 42.165000915527344,
-      "high_since_entry": 42.18000030517578
+      "current_price": 42.2599983215332,
+      "high_since_entry": 42.2599983215332
     },
     "XLV": {
       "symbol": "XLV",
@@ -46,7 +46,7 @@
       "entry_price": 156.67999267578125,
       "entry_date": "2026-02-10T09:30:11.720073",
       "asset_type": "etf",
-      "current_price": 156.1699981689453,
+      "current_price": 156.46499633789062,
       "high_since_entry": 156.80999755859375
     },
     "CRM": {
@@ -55,7 +55,7 @@
       "entry_price": 194.72000122070312,
       "entry_date": "2026-02-10T09:45:27.430295",
       "asset_type": "stock",
-      "current_price": 196.05569458007812,
+      "current_price": 196.19000244140625,
       "high_since_entry": 197.8699951171875
     }
   },
