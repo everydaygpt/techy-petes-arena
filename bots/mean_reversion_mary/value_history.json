@@ -110,5 +110,12 @@
     "cash": 8800.004257575989,
     "positions_value": 1192.4411411895753,
     "num_positions": 1
+  },
+  {
+    "timestamp": "2026-02-10T13:19:00.037189",
+    "total_value": 9989.867592956543,
+    "cash": 8800.004257575989,
+    "positions_value": 1189.8633353805542,
+    "num_positions": 1
   }
 ]
