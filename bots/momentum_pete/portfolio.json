@@ -1,8 +1,8 @@
 {
   "starting_cash": 10000.0,
-  "cash": 8800.003911019898,
+  "cash": 3992.071216659165,
   "created_at": "2026-02-10T03:00:59.907347",
-  "last_updated": "2026-02-09T22:38:12.377471",
+  "last_updated": "2026-02-10T09:30:11.720086",
   "positions": {
     "NFLX": {
       "symbol": "NFLX",
@@ -10,8 +10,44 @@
       "entry_price": 81.47000122070312,
       "entry_date": "2026-02-09T22:38:12.377449",
       "asset_type": "stock",
-      "current_price": 81.47000122070312,
-      "high_since_entry": 81.47000122070312
+      "current_price": 82.58999633789062,
+      "high_since_entry": 82.58999633789062
+    },
+    "NVDA": {
+      "symbol": "NVDA",
+      "quantity": 6.2839,
+      "entry_price": 191.2801055908203,
+      "entry_date": "2026-02-10T09:30:11.716450",
+      "asset_type": "stock",
+      "current_price": 191.2801055908203,
+      "high_since_entry": 191.2801055908203
+    },
+    "ADBE": {
+      "symbol": "ADBE",
+      "quantity": 4.5018,
+      "entry_price": 267.0,
+      "entry_date": "2026-02-10T09:30:11.718078",
+      "asset_type": "stock",
+      "current_price": 267.0,
+      "high_since_entry": 267.0
+    },
+    "PYPL": {
+      "symbol": "PYPL",
+      "quantity": 29.4329,
+      "entry_price": 40.8380012512207,
+      "entry_date": "2026-02-10T09:30:11.719092",
+      "asset_type": "stock",
+      "current_price": 40.8380012512207,
+      "high_since_entry": 40.8380012512207
+    },
+    "XLV": {
+      "symbol": "XLV",
+      "quantity": 7.6716,
+      "entry_price": 156.67999267578125,
+      "entry_date": "2026-02-10T09:30:11.720073",
+      "asset_type": "etf",
+      "current_price": 156.67999267578125,
+      "high_since_entry": 156.67999267578125
     }
   },
   "trade_history": [
@@ -25,6 +61,50 @@
       "asset_type": "stock",
       "reason": "RSI oversold (32.1) | MACD momentum increasing",
       "cash_after": 8800.003911019898
+    },
+    {
+      "timestamp": "2026-02-10T09:30:11.716464",
+      "action": "BUY",
+      "symbol": "NVDA",
+      "quantity": 6.2839,
+      "price": 191.2801055908203,
+      "total": 1201.9850555221558,
+      "asset_type": "stock",
+      "reason": "MACD bullish crossover | Price above rising MAs (bullish trend) | EMA9 crossed above SMA20",
+      "cash_after": 7598.018855497742
+    },
+    {
+      "timestamp": "2026-02-10T09:30:11.718088",
+      "action": "BUY",
+      "symbol": "ADBE",
+      "quantity": 4.5018,
+      "price": 267.0,
+      "total": 1201.9806,
+      "asset_type": "stock",
+      "reason": "RSI oversold (31.0) | Price near lower Bollinger Band (0.09)",
+      "cash_after": 6396.038255497742
+    },
+    {
+      "timestamp": "2026-02-10T09:30:11.719100",
+      "action": "BUY",
+      "symbol": "PYPL",
+      "quantity": 29.4329,
+      "price": 40.8380012512207,
+      "total": 1201.9808070270537,
+      "asset_type": "stock",
+      "reason": "RSI oversold (12.5) | Price near lower Bollinger Band (0.14)",
+      "cash_after": 5194.0574484706885
+    },
+    {
+      "timestamp": "2026-02-10T09:30:11.720081",
+      "action": "BUY",
+      "symbol": "XLV",
+      "quantity": 7.6716,
+      "price": 156.67999267578125,
+      "total": 1201.9862318115233,
+      "asset_type": "etf",
+      "reason": "MACD bullish crossover",
+      "cash_after": 3992.071216659165
     }
   ]
 }
