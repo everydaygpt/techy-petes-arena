@@ -1,8 +1,30 @@
 {
   "starting_cash": 10000.0,
-  "cash": 10000.0,
+  "cash": 8800.003911019898,
   "created_at": "2026-02-10T03:00:59.907347",
-  "last_updated": "2026-02-10T03:00:59.907347",
-  "positions": {},
-  "trade_history": []
+  "last_updated": "2026-02-09T22:38:12.377471",
+  "positions": {
+    "NFLX": {
+      "symbol": "NFLX",
+      "quantity": 14.7293,
+      "entry_price": 81.47000122070312,
+      "entry_date": "2026-02-09T22:38:12.377449",
+      "asset_type": "stock",
+      "current_price": 81.47000122070312,
+      "high_since_entry": 81.47000122070312
+    }
+  },
+  "trade_history": [
+    {
+      "timestamp": "2026-02-09T22:38:12.377466",
+      "action": "BUY",
+      "symbol": "NFLX",
+      "quantity": 14.7293,
+      "price": 81.47000122070312,
+      "total": 1199.9960889801025,
+      "asset_type": "stock",
+      "reason": "RSI oversold (32.1) | MACD momentum increasing",
+      "cash_after": 8800.003911019898
+    }
+  ]
 }

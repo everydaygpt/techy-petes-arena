@@ -1,8 +1,130 @@
 {
   "starting_cash": 10000.0,
-  "cash": 10000.0,
+  "cash": 2.499509629417833,
   "created_at": "2026-02-10T03:00:59.916355",
-  "last_updated": "2026-02-10T03:00:59.916355",
-  "positions": {},
-  "trade_history": []
+  "last_updated": "2026-02-09T22:38:25.166853",
+  "positions": {
+    "COIN": {
+      "symbol": "COIN",
+      "quantity": 14.9477,
+      "entry_price": 167.25,
+      "entry_date": "2026-02-09T22:38:25.164615",
+      "asset_type": "stock",
+      "current_price": 167.25,
+      "high_since_entry": 167.25
+    },
+    "BB": {
+      "symbol": "BB",
+      "quantity": 720.4611,
+      "entry_price": 3.4700000286102295,
+      "entry_date": "2026-02-09T22:38:25.165406",
+      "asset_type": "stock",
+      "current_price": 3.4700000286102295,
+      "high_since_entry": 3.4700000286102295
+    },
+    "ARKF": {
+      "symbol": "ARKF",
+      "quantity": 62.282,
+      "entry_price": 40.13999938964844,
+      "entry_date": "2026-02-09T22:38:25.165961",
+      "asset_type": "etf",
+      "current_price": 40.13999938964844,
+      "high_since_entry": 40.13999938964844
+    },
+    "ARKW": {
+      "symbol": "ARKW",
+      "quantity": 17.5891,
+      "entry_price": 127.91999816894531,
+      "entry_date": "2026-02-09T22:38:25.166243",
+      "asset_type": "etf",
+      "current_price": 127.91999816894531,
+      "high_since_entry": 127.91999816894531
+    },
+    "BTC": {
+      "symbol": "BTC",
+      "quantity": 7.1839,
+      "entry_price": 31.31999969482422,
+      "entry_date": "2026-02-09T22:38:25.166529",
+      "asset_type": "crypto",
+      "current_price": 31.31999969482422,
+      "high_since_entry": 31.31999969482422
+    },
+    "ETH": {
+      "symbol": "ETH",
+      "quantity": 1.12,
+      "entry_price": 20.09000015258789,
+      "entry_date": "2026-02-09T22:38:25.166847",
+      "asset_type": "crypto",
+      "current_price": 20.09000015258789,
+      "high_since_entry": 20.09000015258789
+    }
+  },
+  "trade_history": [
+    {
+      "timestamp": "2026-02-09T22:38:25.164621",
+      "action": "BUY",
+      "symbol": "COIN",
+      "quantity": 14.9477,
+      "price": 167.25,
+      "total": 2500.002825,
+      "asset_type": "stock",
+      "reason": "RSI oversold (20.6) | Price near lower Bollinger Band (0.17)",
+      "cash_after": 7499.997175
+    },
+    {
+      "timestamp": "2026-02-09T22:38:25.165410",
+      "action": "BUY",
+      "symbol": "BB",
+      "quantity": 720.4611,
+      "price": 3.4700000286102295,
+      "total": 2500.000037612557,
+      "asset_type": "stock",
+      "reason": "RSI oversold (24.3) | Price near lower Bollinger Band (0.19)",
+      "cash_after": 4999.997137387443
+    },
+    {
+      "timestamp": "2026-02-09T22:38:25.165965",
+      "action": "BUY",
+      "symbol": "ARKF",
+      "quantity": 62.282,
+      "price": 40.13999938964844,
+      "total": 2499.9994419860836,
+      "asset_type": "etf",
+      "reason": "RSI oversold (27.3) | Price near lower Bollinger Band (0.19)",
+      "cash_after": 2499.9976954013596
+    },
+    {
+      "timestamp": "2026-02-09T22:38:25.166247",
+      "action": "BUY",
+      "symbol": "ARKW",
+      "quantity": 17.5891,
+      "price": 127.91999816894531,
+      "total": 2249.9976397933956,
+      "asset_type": "etf",
+      "reason": "RSI oversold (32.0) | Price near lower Bollinger Band (0.20)",
+      "cash_after": 250.000055607964
+    },
+    {
+      "timestamp": "2026-02-09T22:38:25.166532",
+      "action": "BUY",
+      "symbol": "BTC",
+      "quantity": 7.1839,
+      "price": 31.31999969482422,
+      "total": 224.9997458076477,
+      "asset_type": "crypto",
+      "reason": "RSI oversold (25.2) | Price near lower Bollinger Band (0.13)",
+      "cash_after": 25.000309800316273
+    },
+    {
+      "timestamp": "2026-02-09T22:38:25.166851",
+      "action": "BUY",
+      "symbol": "ETH",
+      "quantity": 1.12,
+      "price": 20.09000015258789,
+      "total": 22.50080017089844,
+      "asset_type": "crypto",
+      "reason": "RSI oversold (24.3) | Price near lower Bollinger Band (0.15)",
+      "cash_after": 2.499509629417833
+    }
+  ]
 }
