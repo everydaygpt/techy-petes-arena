@@ -10,7 +10,7 @@
     "watchlist": {
         "stocks": ["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA", "NVDA", "META", "NFLX", "AMD", "CRM", "INTC", "IBM", "CSCO", "ORCL", "ADBE"],
         "etfs": ["SPY", "QQQ", "IWM", "EFA", "AGG", "GLD", "XLF", "XLE", "XLV", "XLI"],
-        "crypto": ["BTC", "ETH", "ADA", "XRP", "SOL"]
+        "crypto": ["BTC-USD", "ETH-USD", "ADA-USD", "XRP-USD", "SOL-USD"]
     },
     "strategy": {
         "rsi_oversold": 25,

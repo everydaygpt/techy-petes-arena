@@ -10,7 +10,7 @@
     "watchlist": {
         "stocks": ["TSLA", "NVDA", "AMD", "COIN", "RIOT", "MARA", "ARKK", "GME", "AMC", "BB", "NOK", "F", "GE", "PLUG", "NIO"],
         "etfs": ["ARKK", "ARKF", "ARKW", "ARKG", "ARKQ"],
-        "crypto": ["BTC", "ETH", "ADA", "XRP", "SOL", "DOT", "DOGE", "SHIB", "LUNA", "FTT", "AVAX", "LINK"]
+        "crypto": ["BTC-USD", "ETH-USD", "ADA-USD", "XRP-USD", "SOL-USD", "DOT-USD", "DOGE-USD", "SHIB-USD", "AVAX-USD", "LINK-USD"]
     },
     "strategy": {
         "rsi_oversold": 35,

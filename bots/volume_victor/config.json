@@ -9,7 +9,7 @@
     "trailing_stop_pct": 0.035,
     "watchlist": {
         "stocks": ["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA", "NVDA", "META", "JPM", "BAC", "WFC", "GS", "MS", "C", "USB", "PNC"],
-        "etfs": ["SPY", "QQQ", "VTI", "VOO", "VTSAX", "BRK.B", "IVV", "SCHX", "SPLG", "ITOT"],
+        "etfs": ["SPY", "QQQ", "VTI", "VOO", "IVV", "SCHX", "SPLG", "ITOT", "DIA", "XLF"],
         "crypto": []
     },
     "strategy": {
