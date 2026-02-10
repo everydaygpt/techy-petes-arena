@@ -2,7 +2,7 @@
   "starting_cash": 10000.0,
   "cash": 2785.0798170925145,
   "created_at": "2026-02-10T03:00:59.907347",
-  "last_updated": "2026-02-10T10:31:09.060822",
+  "last_updated": "2026-02-10T10:46:24.190149",
   "positions": {
     "NFLX": {
       "symbol": "NFLX",
@@ -10,7 +10,7 @@
       "entry_price": 81.47000122070312,
       "entry_date": "2026-02-09T22:38:12.377449",
       "asset_type": "stock",
-      "current_price": 84.13500213623047,
+      "current_price": 84.06999969482422,
       "high_since_entry": 84.20909881591797
     },
     "NVDA": {
@@ -19,7 +19,7 @@
       "entry_price": 191.2801055908203,
       "entry_date": "2026-02-10T09:30:11.716450",
       "asset_type": "stock",
-      "current_price": 189.21499633789062,
+      "current_price": 189.74000549316406,
       "high_since_entry": 191.2801055908203
     },
     "ADBE": {
@@ -28,8 +28,8 @@
       "entry_price": 267.0,
       "entry_date": "2026-02-10T09:30:11.718078",
       "asset_type": "stock",
-      "current_price": 268.3349914550781,
-      "high_since_entry": 269.0249938964844
+      "current_price": 269.5400085449219,
+      "high_since_entry": 269.5400085449219
     },
     "PYPL": {
       "symbol": "PYPL",
@@ -37,7 +37,7 @@
       "entry_price": 40.8380012512207,
       "entry_date": "2026-02-10T09:30:11.719092",
       "asset_type": "stock",
-      "current_price": 42.18000030517578,
+      "current_price": 42.130001068115234,
       "high_since_entry": 42.18000030517578
     },
     "XLV": {
@@ -46,7 +46,7 @@
       "entry_price": 156.67999267578125,
       "entry_date": "2026-02-10T09:30:11.720073",
       "asset_type": "etf",
-      "current_price": 156.36000061035156,
+      "current_price": 156.38499450683594,
       "high_since_entry": 156.80999755859375
     },
     "CRM": {
@@ -55,7 +55,7 @@
       "entry_price": 194.72000122070312,
       "entry_date": "2026-02-10T09:45:27.430295",
       "asset_type": "stock",
-      "current_price": 197.0,
+      "current_price": 196.31500244140625,
       "high_since_entry": 197.8699951171875
     }
   },
