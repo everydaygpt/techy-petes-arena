@@ -2,7 +2,7 @@
   "starting_cash": 10000.0,
   "cash": 2.499509629417833,
   "created_at": "2026-02-10T03:00:59.916355",
-  "last_updated": "2026-02-10T13:34:19.546725",
+  "last_updated": "2026-02-10T13:49:34.545505",
   "positions": {
     "COIN": {
       "symbol": "COIN",
@@ -10,7 +10,7 @@
       "entry_price": 167.25,
       "entry_date": "2026-02-09T22:38:25.164615",
       "asset_type": "stock",
-      "current_price": 163.5500030517578,
+      "current_price": 163.8000030517578,
       "high_since_entry": 167.25
     },
     "BB": {
@@ -19,7 +19,7 @@
       "entry_price": 3.4700000286102295,
       "entry_date": "2026-02-09T22:38:25.165406",
       "asset_type": "stock",
-      "current_price": 3.505000114440918,
+      "current_price": 3.515000104904175,
       "high_since_entry": 3.5799999237060547
     },
     "ARKF": {
@@ -28,7 +28,7 @@
       "entry_price": 40.13999938964844,
       "entry_date": "2026-02-09T22:38:25.165961",
       "asset_type": "etf",
-      "current_price": 40.502601623535156,
+      "current_price": 40.52000045776367,
       "high_since_entry": 40.97050094604492
     },
     "ARKW": {
@@ -37,7 +37,7 @@
       "entry_price": 127.91999816894531,
       "entry_date": "2026-02-09T22:38:25.166243",
       "asset_type": "etf",
-      "current_price": 128.80499267578125,
+      "current_price": 128.6916046142578,
       "high_since_entry": 129.75
     },
     "BTC": {
@@ -46,7 +46,7 @@
       "entry_price": 31.31999969482422,
       "entry_date": "2026-02-09T22:38:25.166529",
       "asset_type": "crypto",
-      "current_price": 30.489999771118164,
+      "current_price": 30.40999984741211,
       "high_since_entry": 31.31999969482422
     },
     "ETH": {
@@ -55,7 +55,7 @@
       "entry_price": 20.09000015258789,
       "entry_date": "2026-02-09T22:38:25.166847",
       "asset_type": "crypto",
-      "current_price": 18.979999542236328,
+      "current_price": 18.924999237060547,
       "high_since_entry": 20.09000015258789
     }
   },
