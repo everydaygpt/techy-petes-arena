@@ -2,7 +2,7 @@
   "starting_cash": 10000.0,
   "cash": 8800.004257575989,
   "created_at": "2026-02-10T03:00:59.911597",
-  "last_updated": "2026-02-10T12:18:01.484947",
+  "last_updated": "2026-02-10T12:33:15.769982",
   "positions": {
     "NVDA": {
       "symbol": "NVDA",
@@ -10,7 +10,7 @@
       "entry_price": 191.2801055908203,
       "entry_date": "2026-02-10T09:30:15.809198",
       "asset_type": "stock",
-      "current_price": 189.84500122070312,
+      "current_price": 189.51499938964844,
       "high_since_entry": 191.2801055908203
     }
   },

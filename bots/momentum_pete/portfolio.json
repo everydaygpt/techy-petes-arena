@@ -2,7 +2,7 @@
   "starting_cash": 10000.0,
   "cash": 2785.0798170925145,
   "created_at": "2026-02-10T03:00:59.907347",
-  "last_updated": "2026-02-10T12:17:55.647680",
+  "last_updated": "2026-02-10T12:33:09.949941",
   "positions": {
     "NFLX": {
       "symbol": "NFLX",
@@ -10,7 +10,7 @@
       "entry_price": 81.47000122070312,
       "entry_date": "2026-02-09T22:38:12.377449",
       "asset_type": "stock",
-      "current_price": 82.90499877929688,
+      "current_price": 82.88999938964844,
       "high_since_entry": 84.20909881591797
     },
     "NVDA": {
@@ -19,7 +19,7 @@
       "entry_price": 191.2801055908203,
       "entry_date": "2026-02-10T09:30:11.716450",
       "asset_type": "stock",
-      "current_price": 189.84500122070312,
+      "current_price": 189.51499938964844,
       "high_since_entry": 191.2801055908203
     },
     "ADBE": {
@@ -28,7 +28,7 @@
       "entry_price": 267.0,
       "entry_date": "2026-02-10T09:30:11.718078",
       "asset_type": "stock",
-      "current_price": 267.90020751953125,
+      "current_price": 268.0899963378906,
       "high_since_entry": 269.5400085449219
     },
     "PYPL": {
@@ -37,7 +37,7 @@
       "entry_price": 40.8380012512207,
       "entry_date": "2026-02-10T09:30:11.719092",
       "asset_type": "stock",
-      "current_price": 41.79999923706055,
+      "current_price": 41.834999084472656,
       "high_since_entry": 42.2599983215332
     },
     "XLV": {
@@ -46,7 +46,7 @@
       "entry_price": 156.67999267578125,
       "entry_date": "2026-02-10T09:30:11.720073",
       "asset_type": "etf",
-      "current_price": 156.44000244140625,
+      "current_price": 156.4499969482422,
       "high_since_entry": 156.80999755859375
     },
     "CRM": {
@@ -55,7 +55,7 @@
       "entry_price": 194.72000122070312,
       "entry_date": "2026-02-10T09:45:27.430295",
       "asset_type": "stock",
-      "current_price": 195.5399932861328,
+      "current_price": 195.93499755859375,
       "high_since_entry": 197.8699951171875
     }
   },
