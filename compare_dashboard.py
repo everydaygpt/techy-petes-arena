@@ -275,8 +275,10 @@ def generate_comparison_dashboard(results=None, bot_roster=None):
                 held_syms = [p["symbol"] for p in r["summary"].get("positions", [])]
                 if sym in held_syms:
                     pos = next(p for p in r["summary"]["positions"] if p["symbol"] == sym)
-                    pnl_class = "positive" if pos["pnl"] >= 0 else "negative"
-                    html += f'<td class="held {pnl_class}">${pos["market_value"]:,.0f}</td>'
+                    pos_pnl = pos.get("pnl", pos.get("unrealized_pnl", 0))
+                    pos_mv = pos.get("market_value", 0)
+                    pnl_class = "positive" if pos_pnl >= 0 else "negative"
+                    html += f'<td class="held {pnl_class}">${pos_mv:,.0f}</td>'
                 else:
                     html += '<td class="not-held">—</td>'
             html += "</tr>"
