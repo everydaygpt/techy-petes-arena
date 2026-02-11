@@ -1,8 +1,8 @@
 {
   "starting_cash": 10000.0,
-  "cash": 8499.991022814942,
+  "cash": 7001.569426173402,
   "created_at": "2026-02-10T17:00:53.480207",
-  "last_updated": "2026-02-11T10:02:05.339303",
+  "last_updated": "2026-02-11T10:17:33.492601",
   "positions": {
     "VOO": {
       "symbol": "VOO",
@@ -10,8 +10,17 @@
       "entry_price": 640.4000244140625,
       "entry_date": "2026-02-11T09:46:17.159411",
       "asset_type": "etf",
-      "current_price": 638.5800170898438,
+      "current_price": 635.9163818359375,
       "high_since_entry": 640.4000244140625
+    },
+    "NVDA": {
+      "symbol": "NVDA",
+      "quantity": 7.9475,
+      "entry_price": 188.5399932861328,
+      "entry_date": "2026-02-11T10:17:33.492585",
+      "asset_type": "stock",
+      "current_price": 188.5399932861328,
+      "high_since_entry": 188.5399932861328
     }
   },
   "trade_history": [
@@ -25,6 +34,17 @@
       "asset_type": "etf",
       "reason": "MACD bullish crossover | Price above rising MAs (bullish trend) | EMA9 crossed above SMA20",
       "cash_after": 8499.991022814942
+    },
+    {
+      "timestamp": "2026-02-11T10:17:33.492595",
+      "action": "BUY",
+      "symbol": "NVDA",
+      "quantity": 7.9475,
+      "price": 188.5399932861328,
+      "total": 1498.4215966415404,
+      "asset_type": "stock",
+      "reason": "MACD bullish crossover | Price above rising MAs (bullish trend) | Strong short-term momentum (+4.5% in 5d)",
+      "cash_after": 7001.569426173402
     }
   ]
 }
