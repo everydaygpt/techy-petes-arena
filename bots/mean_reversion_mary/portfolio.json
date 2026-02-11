@@ -1,8 +1,30 @@
 {
   "starting_cash": 10000.0,
-  "cash": 10000.0,
+  "cash": 8799.980726757813,
   "created_at": "2026-02-10T17:00:53.479469",
-  "last_updated": "2026-02-10T17:00:53.479469",
-  "positions": {},
-  "trade_history": []
+  "last_updated": "2026-02-11T09:30:41.564177",
+  "positions": {
+    "SPY": {
+      "symbol": "SPY",
+      "quantity": 1.7232,
+      "entry_price": 696.3900146484375,
+      "entry_date": "2026-02-11T09:30:37.258461",
+      "asset_type": "etf",
+      "current_price": 696.8099975585938,
+      "high_since_entry": 696.9199829101562
+    }
+  },
+  "trade_history": [
+    {
+      "timestamp": "2026-02-11T09:30:37.258476",
+      "action": "BUY",
+      "symbol": "SPY",
+      "quantity": 1.7232,
+      "price": 696.3900146484375,
+      "total": 1200.0192732421876,
+      "asset_type": "etf",
+      "reason": "MACD bullish crossover | Price above rising MAs (bullish trend)",
+      "cash_after": 8799.980726757813
+    }
+  ]
 }

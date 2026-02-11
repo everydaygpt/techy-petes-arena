@@ -1,8 +1,110 @@
 {
   "starting_cash": 10000.0,
-  "cash": 10000.0,
+  "cash": 4000.036845751346,
   "created_at": "2026-02-10T17:00:53.477289",
-  "last_updated": "2026-02-10T17:00:53.477289",
-  "positions": {},
-  "trade_history": []
+  "last_updated": "2026-02-11T09:30:34.004130",
+  "positions": {
+    "AMZN": {
+      "symbol": "AMZN",
+      "quantity": 5.7695,
+      "entry_price": 207.99000549316406,
+      "entry_date": "2026-02-11T09:30:17.988103",
+      "asset_type": "stock",
+      "current_price": 207.82000732421875,
+      "high_since_entry": 208.01499938964844
+    },
+    "PYPL": {
+      "symbol": "PYPL",
+      "quantity": 28.9226,
+      "entry_price": 41.4900016784668,
+      "entry_date": "2026-02-11T09:30:17.989768",
+      "asset_type": "stock",
+      "current_price": 41.5,
+      "high_since_entry": 41.5
+    },
+    "SHIB-USD": {
+      "symbol": "SHIB-USD",
+      "quantity": 202087766.8475,
+      "entry_price": 5.938014055573149e-06,
+      "entry_date": "2026-02-11T09:30:17.990944",
+      "asset_type": "crypto",
+      "current_price": 5.938014055573149e-06,
+      "high_since_entry": 5.938014055573149e-06
+    },
+    "TSLA": {
+      "symbol": "TSLA",
+      "quantity": 2.7987,
+      "entry_price": 428.7699890136719,
+      "entry_date": "2026-02-11T09:30:17.991889",
+      "asset_type": "stock",
+      "current_price": 428.9700012207031,
+      "high_since_entry": 429.010986328125
+    },
+    "SPY": {
+      "symbol": "SPY",
+      "quantity": 1.7232,
+      "entry_price": 696.3599853515625,
+      "entry_date": "2026-02-11T09:30:34.004089",
+      "asset_type": "etf",
+      "current_price": 696.3599853515625,
+      "high_since_entry": 696.3599853515625
+    }
+  },
+  "trade_history": [
+    {
+      "timestamp": "2026-02-11T09:30:17.988117",
+      "action": "BUY",
+      "symbol": "AMZN",
+      "quantity": 5.7695,
+      "price": 207.99000549316406,
+      "total": 1199.99833669281,
+      "asset_type": "stock",
+      "reason": "RSI oversold (27.2) | Price at lower Bollinger Band (0.04)",
+      "cash_after": 8800.00166330719
+    },
+    {
+      "timestamp": "2026-02-11T09:30:17.989801",
+      "action": "BUY",
+      "symbol": "PYPL",
+      "quantity": 28.9226,
+      "price": 41.4900016784668,
+      "total": 1199.9987225456237,
+      "asset_type": "stock",
+      "reason": "RSI oversold (14.2) | Price near lower Bollinger Band (0.16)",
+      "cash_after": 7600.002940761567
+    },
+    {
+      "timestamp": "2026-02-11T09:30:17.990951",
+      "action": "BUY",
+      "symbol": "SHIB-USD",
+      "quantity": 202087766.8475,
+      "price": 5.938014055573149e-06,
+      "total": 1199.9999999998442,
+      "asset_type": "crypto",
+      "reason": "RSI oversold (0.0) | Price near lower Bollinger Band (0.20)",
+      "cash_after": 6400.002940761722
+    },
+    {
+      "timestamp": "2026-02-11T09:30:17.991897",
+      "action": "BUY",
+      "symbol": "TSLA",
+      "quantity": 2.7987,
+      "price": 428.7699890136719,
+      "total": 1199.9985682525635,
+      "asset_type": "stock",
+      "reason": "MACD bullish crossover",
+      "cash_after": 5200.004372509158
+    },
+    {
+      "timestamp": "2026-02-11T09:30:34.004122",
+      "action": "BUY",
+      "symbol": "SPY",
+      "quantity": 1.7232,
+      "price": 696.3599853515625,
+      "total": 1199.9675267578125,
+      "asset_type": "etf",
+      "reason": "MACD bullish crossover | Price above rising MAs (bullish trend)",
+      "cash_after": 4000.036845751346
+    }
+  ]
 }
