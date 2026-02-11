@@ -1,8 +1,8 @@
 {
   "starting_cash": 10000.0,
-  "cash": 8799.980726757813,
+  "cash": 6399.9365989181515,
   "created_at": "2026-02-10T17:00:53.479469",
-  "last_updated": "2026-02-11T09:30:41.564177",
+  "last_updated": "2026-02-11T09:46:25.160171",
   "positions": {
     "SPY": {
       "symbol": "SPY",
@@ -10,8 +10,26 @@
       "entry_price": 696.3900146484375,
       "entry_date": "2026-02-11T09:30:37.258461",
       "asset_type": "etf",
-      "current_price": 696.8099975585938,
+      "current_price": 696.364990234375,
       "high_since_entry": 696.9199829101562
+    },
+    "TSLA": {
+      "symbol": "TSLA",
+      "quantity": 2.759,
+      "entry_price": 434.9150085449219,
+      "entry_date": "2026-02-11T09:46:10.902742",
+      "asset_type": "stock",
+      "current_price": 435.2749938964844,
+      "high_since_entry": 435.42498779296875
+    },
+    "NVDA": {
+      "symbol": "NVDA",
+      "quantity": 6.3653,
+      "entry_price": 188.5399932861328,
+      "entry_date": "2026-02-11T09:46:25.160151",
+      "asset_type": "stock",
+      "current_price": 188.5399932861328,
+      "high_since_entry": 188.5399932861328
     }
   },
   "trade_history": [
@@ -25,6 +43,28 @@
       "asset_type": "etf",
       "reason": "MACD bullish crossover | Price above rising MAs (bullish trend)",
       "cash_after": 8799.980726757813
+    },
+    {
+      "timestamp": "2026-02-11T09:46:10.902753",
+      "action": "BUY",
+      "symbol": "TSLA",
+      "quantity": 2.759,
+      "price": 434.9150085449219,
+      "total": 1199.9305085754395,
+      "asset_type": "stock",
+      "reason": "MACD bullish crossover | Strong short-term momentum (+7.1% in 5d)",
+      "cash_after": 7600.050218182373
+    },
+    {
+      "timestamp": "2026-02-11T09:46:25.160164",
+      "action": "BUY",
+      "symbol": "NVDA",
+      "quantity": 6.3653,
+      "price": 188.5399932861328,
+      "total": 1200.1136192642214,
+      "asset_type": "stock",
+      "reason": "MACD bullish crossover | Price above rising MAs (bullish trend) | Strong short-term momentum (+4.5% in 5d)",
+      "cash_after": 6399.9365989181515
     }
   ]
 }

@@ -1,8 +1,30 @@
 {
   "starting_cash": 10000.0,
-  "cash": 10000.0,
+  "cash": 8499.991022814942,
   "created_at": "2026-02-10T17:00:53.480207",
-  "last_updated": "2026-02-10T17:00:53.480207",
-  "positions": {},
-  "trade_history": []
+  "last_updated": "2026-02-11T09:46:25.670388",
+  "positions": {
+    "VOO": {
+      "symbol": "VOO",
+      "quantity": 2.3423,
+      "entry_price": 640.4000244140625,
+      "entry_date": "2026-02-11T09:46:17.159411",
+      "asset_type": "etf",
+      "current_price": 640.3399047851562,
+      "high_since_entry": 640.4000244140625
+    }
+  },
+  "trade_history": [
+    {
+      "timestamp": "2026-02-11T09:46:17.159425",
+      "action": "BUY",
+      "symbol": "VOO",
+      "quantity": 2.3423,
+      "price": 640.4000244140625,
+      "total": 1500.0089771850585,
+      "asset_type": "etf",
+      "reason": "MACD bullish crossover | Price above rising MAs (bullish trend) | EMA9 crossed above SMA20",
+      "cash_after": 8499.991022814942
+    }
+  ]
 }
