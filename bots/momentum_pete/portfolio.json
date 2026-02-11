@@ -1,8 +1,8 @@
 {
   "starting_cash": 10000.0,
-  "cash": 2804.257725084842,
+  "cash": 1613.569079949344,
   "created_at": "2026-02-10T17:00:53.477289",
-  "last_updated": "2026-02-11T09:46:08.996496",
+  "last_updated": "2026-02-11T10:01:38.753244",
   "positions": {
     "AMZN": {
       "symbol": "AMZN",
@@ -10,7 +10,7 @@
       "entry_price": 207.99000549316406,
       "entry_date": "2026-02-11T09:30:17.988103",
       "asset_type": "stock",
-      "current_price": 205.29989624023438,
+      "current_price": 205.98460388183594,
       "high_since_entry": 208.01499938964844
     },
     "PYPL": {
@@ -19,7 +19,7 @@
       "entry_price": 41.4900016784668,
       "entry_date": "2026-02-11T09:30:17.989768",
       "asset_type": "stock",
-      "current_price": 40.84000015258789,
+      "current_price": 40.70500183105469,
       "high_since_entry": 41.5
     },
     "SHIB-USD": {
@@ -28,7 +28,7 @@
       "entry_price": 5.938014055573149e-06,
       "entry_date": "2026-02-11T09:30:17.990944",
       "asset_type": "crypto",
-      "current_price": 5.857879841641989e-06,
+      "current_price": 5.8417308537173085e-06,
       "high_since_entry": 5.938014055573149e-06
     },
     "TSLA": {
@@ -37,7 +37,7 @@
       "entry_price": 428.7699890136719,
       "entry_date": "2026-02-11T09:30:17.991889",
       "asset_type": "stock",
-      "current_price": 434.56500244140625,
+      "current_price": 431.760009765625,
       "high_since_entry": 434.56500244140625
     },
     "SPY": {
@@ -46,7 +46,7 @@
       "entry_price": 696.3599853515625,
       "entry_date": "2026-02-11T09:30:34.004089",
       "asset_type": "etf",
-      "current_price": 695.8699951171875,
+      "current_price": 694.6400146484375,
       "high_since_entry": 696.3599853515625
     },
     "ADBE": {
@@ -55,8 +55,17 @@
       "entry_price": 264.6700134277344,
       "entry_date": "2026-02-11T09:46:08.996473",
       "asset_type": "stock",
-      "current_price": 264.6700134277344,
+      "current_price": 258.0050048828125,
       "high_since_entry": 264.6700134277344
+    },
+    "NVDA": {
+      "symbol": "NVDA",
+      "quantity": 6.2164,
+      "entry_price": 191.53990173339844,
+      "entry_date": "2026-02-11T10:01:33.872203",
+      "asset_type": "stock",
+      "current_price": 191.5850067138672,
+      "high_since_entry": 191.5850067138672
     }
   },
   "trade_history": [
@@ -125,6 +134,17 @@
       "asset_type": "stock",
       "reason": "RSI oversold (30.0) | Price near lower Bollinger Band (0.06)",
       "cash_after": 2804.257725084842
+    },
+    {
+      "timestamp": "2026-02-11T10:01:33.872220",
+      "action": "BUY",
+      "symbol": "NVDA",
+      "quantity": 6.2164,
+      "price": 191.53990173339844,
+      "total": 1190.688645135498,
+      "asset_type": "stock",
+      "reason": "MACD momentum increasing | EMA9 crossed above SMA20 | Strong short-term momentum (+10.0% in 5d)",
+      "cash_after": 1613.569079949344
     }
   ]
 }
