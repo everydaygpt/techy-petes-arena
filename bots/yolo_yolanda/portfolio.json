@@ -2,7 +2,7 @@
   "starting_cash": 10000.0,
   "cash": 2.4999660008280706,
   "created_at": "2026-02-10T17:00:53.480968",
-  "last_updated": "2026-02-11T11:50:11.638437",
+  "last_updated": "2026-02-11T16:50:47.055419",
   "positions": {
     "COIN": {
       "symbol": "COIN",
@@ -46,7 +46,7 @@
       "entry_price": 1.2710944414138794,
       "entry_date": "2026-02-11T09:30:49.810117",
       "asset_type": "crypto",
-      "current_price": 1.2409230470657349,
+      "current_price": 1.2416354417800903,
       "high_since_entry": 1.2710944414138794
     },
     "DOGE-USD": {
@@ -55,7 +55,7 @@
       "entry_price": 0.09100040793418884,
       "entry_date": "2026-02-11T09:30:49.814149",
       "asset_type": "crypto",
-      "current_price": 0.08938201516866684,
+      "current_price": 0.08938489109277725,
       "high_since_entry": 0.09100040793418884
     }
   },
