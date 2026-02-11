@@ -103,5 +103,19 @@
     "cash": 7001.569426173402,
     "positions_value": 3015.245577204895,
     "num_positions": 2
+  },
+  {
+    "timestamp": "2026-02-11T11:19:49.578672",
+    "total_value": 10017.947415411378,
+    "cash": 7001.569426173402,
+    "positions_value": 3016.377989237976,
+    "num_positions": 2
+  },
+  {
+    "timestamp": "2026-02-11T16:19:50.624244",
+    "total_value": 10017.947415411378,
+    "cash": 7001.569426173402,
+    "positions_value": 3016.377989237976,
+    "num_positions": 2
   }
 ]
