@@ -2,7 +2,7 @@
   "starting_cash": 10000.0,
   "cash": 2.2920073587503964,
   "created_at": "2026-02-10T17:00:53.480968",
-  "last_updated": "2026-02-12T16:49:34.509051",
+  "last_updated": "2026-02-12T11:49:38.482325",
   "positions": {
     "MARA": {
       "symbol": "MARA",
@@ -10,7 +10,7 @@
       "entry_price": 7.590000152587891,
       "entry_date": "2026-02-11T09:30:49.796942",
       "asset_type": "stock",
-      "current_price": 7.324999809265137,
+      "current_price": 7.335000038146973,
       "high_since_entry": 7.78000020980835
     },
     "AMC": {
@@ -19,7 +19,7 @@
       "entry_price": 1.3300000429153442,
       "entry_date": "2026-02-11T09:30:49.801222",
       "asset_type": "stock",
-      "current_price": 1.25,
+      "current_price": 1.2599999904632568,
       "high_since_entry": 1.3350000381469727
     },
     "SOL-USD": {
@@ -55,7 +55,7 @@
       "entry_price": 68.6500015258789,
       "entry_date": "2026-02-12T11:02:48.667607",
       "asset_type": "stock",
-      "current_price": 67.91999816894531,
+      "current_price": 67.94999694824219,
       "high_since_entry": 68.68000030517578
     },
     "BB": {
