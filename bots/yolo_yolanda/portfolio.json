@@ -1,25 +1,16 @@
 {
   "starting_cash": 10000.0,
-  "cash": 2.4999660008280706,
+  "cash": 2.2920073587503964,
   "created_at": "2026-02-10T17:00:53.480968",
-  "last_updated": "2026-02-12T15:47:57.867195",
+  "last_updated": "2026-02-12T11:02:48.671685",
   "positions": {
-    "COIN": {
-      "symbol": "COIN",
-      "quantity": 15.8892,
-      "entry_price": 157.33999633789062,
-      "entry_date": "2026-02-11T09:30:49.793957",
-      "asset_type": "stock",
-      "current_price": 145.18600463867188,
-      "high_since_entry": 157.33999633789062
-    },
     "MARA": {
       "symbol": "MARA",
       "quantity": 329.3808,
       "entry_price": 7.590000152587891,
       "entry_date": "2026-02-11T09:30:49.796942",
       "asset_type": "stock",
-      "current_price": 7.565000057220459,
+      "current_price": 7.554999828338623,
       "high_since_entry": 7.78000020980835
     },
     "AMC": {
@@ -28,7 +19,7 @@
       "entry_price": 1.3300000429153442,
       "entry_date": "2026-02-11T09:30:49.801222",
       "asset_type": "stock",
-      "current_price": 1.2599999904632568,
+      "current_price": 1.2551000118255615,
       "high_since_entry": 1.3350000381469727
     },
     "SOL-USD": {
@@ -37,7 +28,7 @@
       "entry_price": 82.01968383789062,
       "entry_date": "2026-02-11T09:30:49.805580",
       "asset_type": "crypto",
-      "current_price": 80.4737319946289,
+      "current_price": 80.23766326904297,
       "high_since_entry": 82.01968383789062
     },
     "DOT-USD": {
@@ -46,7 +37,7 @@
       "entry_price": 1.2710944414138794,
       "entry_date": "2026-02-11T09:30:49.810117",
       "asset_type": "crypto",
-      "current_price": 1.2825745344161987,
+      "current_price": 1.2778817415237427,
       "high_since_entry": 1.2940548658370972
     },
     "DOGE-USD": {
@@ -55,8 +46,35 @@
       "entry_price": 0.09100040793418884,
       "entry_date": "2026-02-11T09:30:49.814149",
       "asset_type": "crypto",
-      "current_price": 0.09370581060647964,
+      "current_price": 0.0934152826666832,
       "high_since_entry": 0.0942424088716507
+    },
+    "ARKK": {
+      "symbol": "ARKK",
+      "quantity": 30.0498,
+      "entry_price": 68.6500015258789,
+      "entry_date": "2026-02-12T11:02:48.667607",
+      "asset_type": "stock",
+      "current_price": 68.6500015258789,
+      "high_since_entry": 68.6500015258789
+    },
+    "BB": {
+      "symbol": "BB",
+      "quantity": 60.5855,
+      "entry_price": 3.4049999713897705,
+      "entry_date": "2026-02-12T11:02:48.669570",
+      "asset_type": "stock",
+      "current_price": 3.4049999713897705,
+      "high_since_entry": 3.4049999713897705
+    },
+    "F": {
+      "symbol": "F",
+      "quantity": 1.4638,
+      "entry_price": 14.093000411987305,
+      "entry_date": "2026-02-12T11:02:48.671672",
+      "asset_type": "stock",
+      "current_price": 14.093000411987305,
+      "high_since_entry": 14.093000411987305
     }
   },
   "trade_history": [
@@ -125,6 +143,52 @@
       "asset_type": "crypto",
       "reason": "RSI oversold (22.6) | Price near lower Bollinger Band (0.16)",
       "cash_after": 2.4999660008280706
+    },
+    {
+      "timestamp": "2026-02-12T11:02:48.665724",
+      "action": "SELL",
+      "symbol": "COIN",
+      "quantity": 15.8892,
+      "price": 144.10000610351562,
+      "total": 2289.6338169799806,
+      "pnl": -210.37285283203127,
+      "pnl_pct": -8.414891662983054,
+      "asset_type": "stock",
+      "reason": "Stop loss triggered (-8.4% loss)",
+      "cash_after": 2292.1337829808085
+    },
+    {
+      "timestamp": "2026-02-12T11:02:48.667618",
+      "action": "BUY",
+      "symbol": "ARKK",
+      "quantity": 30.0498,
+      "price": 68.6500015258789,
+      "total": 2062.918815852356,
+      "asset_type": "stock",
+      "reason": "RSI oversold (25.2) | Price near lower Bollinger Band (0.14)",
+      "cash_after": 229.21496712845237
+    },
+    {
+      "timestamp": "2026-02-12T11:02:48.669580",
+      "action": "BUY",
+      "symbol": "BB",
+      "quantity": 60.5855,
+      "price": 3.4049999713897705,
+      "total": 206.29362576663496,
+      "asset_type": "stock",
+      "reason": "RSI oversold (24.5) | Price near lower Bollinger Band (0.18)",
+      "cash_after": 22.92134136181741
+    },
+    {
+      "timestamp": "2026-02-12T11:02:48.671681",
+      "action": "BUY",
+      "symbol": "F",
+      "quantity": 1.4638,
+      "price": 14.093000411987305,
+      "total": 20.629334003067015,
+      "asset_type": "stock",
+      "reason": "MACD bullish crossover | Price above rising MAs (bullish trend)",
+      "cash_after": 2.2920073587503964
     }
   ]
 }
