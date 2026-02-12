@@ -2,7 +2,7 @@
   "starting_cash": 10000.0,
   "cash": 2.2920073587503964,
   "created_at": "2026-02-10T17:00:53.480968",
-  "last_updated": "2026-02-12T13:36:17.404819",
+  "last_updated": "2026-02-12T13:37:19.128856",
   "positions": {
     "MARA": {
       "symbol": "MARA",
@@ -10,7 +10,7 @@
       "entry_price": 7.590000152587891,
       "entry_date": "2026-02-11T09:30:49.796942",
       "asset_type": "stock",
-      "current_price": 7.275000095367432,
+      "current_price": 7.255000114440918,
       "high_since_entry": 7.78000020980835
     },
     "AMC": {
@@ -28,7 +28,7 @@
       "entry_price": 82.01968383789062,
       "entry_date": "2026-02-11T09:30:49.805580",
       "asset_type": "crypto",
-      "current_price": 77.28980255126953,
+      "current_price": 77.35862731933594,
       "high_since_entry": 82.01968383789062
     },
     "DOT-USD": {
@@ -37,7 +37,7 @@
       "entry_price": 1.2710944414138794,
       "entry_date": "2026-02-11T09:30:49.810117",
       "asset_type": "crypto",
-      "current_price": 1.2577645778656006,
+      "current_price": 1.257417917251587,
       "high_since_entry": 1.2940548658370972
     },
     "DOGE-USD": {
@@ -46,7 +46,7 @@
       "entry_price": 0.09100040793418884,
       "entry_date": "2026-02-11T09:30:49.814149",
       "asset_type": "crypto",
-      "current_price": 0.09116895496845245,
+      "current_price": 0.09106049686670303,
       "high_since_entry": 0.0942424088716507
     },
     "ARKK": {
