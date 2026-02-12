@@ -1,13 +1,12 @@
 [
   {
-    "timestamp": "2026-02-10T17:00:53.479674",
-    "total_value": 10000.0,
-    "cash": 10000.0,
-    "positions_value": 0,
-    "num_positions": 0
-  },
-  {
-    "timestamp": "2026-02-11T09:30:33.476996",
+    "timestamp": "2026-02-12T10:16:58.527552",
+    "total_value": 10003.772048054503,
+    "cash": 5198.563030332946,
+    "positions_value": 4805.209017721558,
+    "num_positions": 4
+  }
+]0:33.476996",
     "total_value": 10000.0,
     "cash": 8799.980726757813,
     "positions_value": 1200.0192732421876,
@@ -522,6 +521,13 @@
     "total_value": 10000.125096099853,
     "cash": 5198.563030332946,
     "positions_value": 4801.562065766907,
+    "num_positions": 4
+  },
+  {
+    "timestamp": "2026-02-12T15:16:58.526361",
+    "total_value": 10003.772048054503,
+    "cash": 5198.563030332946,
+    "positions_value": 4805.209017721558,
     "num_positions": 4
   }
 ]
