@@ -1,8 +1,8 @@
 {
   "starting_cash": 10000.0,
-  "cash": 42.971207061160555,
+  "cash": 122.48420977875116,
   "created_at": "2026-02-10T17:00:53.477289",
-  "last_updated": "2026-02-12T11:03:03.915435",
+  "last_updated": "2026-02-12T11:18:02.249829",
   "positions": {
     "AMZN": {
       "symbol": "AMZN",
@@ -10,7 +10,7 @@
       "entry_price": 207.99000549316406,
       "entry_date": "2026-02-11T09:30:17.988103",
       "asset_type": "stock",
-      "current_price": 198.0500030517578,
+      "current_price": 198.3000030517578,
       "high_since_entry": 208.01499938964844
     },
     "PYPL": {
@@ -19,7 +19,7 @@
       "entry_price": 41.4900016784668,
       "entry_date": "2026-02-11T09:30:17.989768",
       "asset_type": "stock",
-      "current_price": 39.09000015258789,
+      "current_price": 39.10300064086914,
       "high_since_entry": 41.5
     },
     "SHIB-USD": {
@@ -28,7 +28,7 @@
       "entry_price": 5.938014055573149e-06,
       "entry_date": "2026-02-11T09:30:17.990944",
       "asset_type": "crypto",
-      "current_price": 6.079792456148425e-06,
+      "current_price": 6.005710929457564e-06,
       "high_since_entry": 6.1413725234160665e-06
     },
     "TSLA": {
@@ -37,17 +37,8 @@
       "entry_price": 428.7699890136719,
       "entry_date": "2026-02-11T09:30:17.991889",
       "asset_type": "stock",
-      "current_price": 424.7300109863281,
+      "current_price": 422.54998779296875,
       "high_since_entry": 434.56500244140625
-    },
-    "SPY": {
-      "symbol": "SPY",
-      "quantity": 1.7232,
-      "entry_price": 696.3599853515625,
-      "entry_date": "2026-02-11T09:30:34.004089",
-      "asset_type": "etf",
-      "current_price": 688.3599853515625,
-      "high_since_entry": 696.3599853515625
     },
     "ADBE": {
       "symbol": "ADBE",
@@ -55,7 +46,7 @@
       "entry_price": 264.6700134277344,
       "entry_date": "2026-02-11T09:46:08.996473",
       "asset_type": "stock",
-      "current_price": 252.00999450683594,
+      "current_price": 253.5800018310547,
       "high_since_entry": 264.6700134277344
     },
     "NVDA": {
@@ -64,7 +55,7 @@
       "entry_price": 191.53990173339844,
       "entry_date": "2026-02-11T10:01:33.872203",
       "asset_type": "stock",
-      "current_price": 189.6199951171875,
+      "current_price": 189.25,
       "high_since_entry": 193.02000427246094
     },
     "MSFT": {
@@ -73,7 +64,7 @@
       "entry_price": 404.4599914550781,
       "entry_date": "2026-02-11T10:17:28.307445",
       "asset_type": "stock",
-      "current_price": 399.3699951171875,
+      "current_price": 399.1700134277344,
       "high_since_entry": 405.5
     },
     "CRM": {
@@ -82,8 +73,17 @@
       "entry_price": 193.4499969482422,
       "entry_date": "2026-02-11T15:54:20.625819",
       "asset_type": "stock",
-      "current_price": 182.2050018310547,
+      "current_price": 182.5500030517578,
       "high_since_entry": 193.4499969482422
+    },
+    "XLV": {
+      "symbol": "XLV",
+      "quantity": 7.0443,
+      "entry_price": 156.47999572753906,
+      "entry_date": "2026-02-12T11:17:53.914586",
+      "asset_type": "etf",
+      "current_price": 156.44000244140625,
+      "high_since_entry": 156.47999572753906
     }
   },
   "trade_history": [
@@ -185,6 +185,30 @@
       "asset_type": "stock",
       "reason": "RSI oversold (25.8) | Price near lower Bollinger Band (0.16)",
       "cash_after": 42.971207061160555
+    },
+    {
+      "timestamp": "2026-02-12T11:17:53.912641",
+      "action": "SELL",
+      "symbol": "SPY",
+      "quantity": 1.7232,
+      "price": 685.8200073242188,
+      "total": 1181.805036621094,
+      "pnl": -18.162490136718752,
+      "pnl_pct": -1.5135818038169675,
+      "asset_type": "etf",
+      "reason": "MACD momentum decreasing | Price below falling MAs (bearish trend) | EMA9 crossed below SMA20",
+      "cash_after": 1224.7762436822545
+    },
+    {
+      "timestamp": "2026-02-12T11:17:53.914596",
+      "action": "BUY",
+      "symbol": "XLV",
+      "quantity": 7.0443,
+      "price": 156.47999572753906,
+      "total": 1102.2920339035034,
+      "asset_type": "etf",
+      "reason": "MACD bullish crossover",
+      "cash_after": 122.48420977875116
     }
   ]
 }
