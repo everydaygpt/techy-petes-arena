@@ -2,7 +2,7 @@
   "starting_cash": 10000.0,
   "cash": 123.72926501785628,
   "created_at": "2026-02-10T17:00:53.477289",
-  "last_updated": "2026-02-12T12:35:30.866176",
+  "last_updated": "2026-02-12T12:50:05.144546",
   "positions": {
     "AMZN": {
       "symbol": "AMZN",
@@ -10,7 +10,7 @@
       "entry_price": 207.99000549316406,
       "entry_date": "2026-02-11T09:30:17.988103",
       "asset_type": "stock",
-      "current_price": 200.02999877929688,
+      "current_price": 199.79849243164062,
       "high_since_entry": 208.01499938964844
     },
     "SHIB-USD": {
@@ -19,7 +19,7 @@
       "entry_price": 5.938014055573149e-06,
       "entry_date": "2026-02-11T09:30:17.990944",
       "asset_type": "crypto",
-      "current_price": 5.986661108181579e-06,
+      "current_price": 5.986513770039892e-06,
       "high_since_entry": 6.1413725234160665e-06
     },
     "TSLA": {
@@ -28,7 +28,7 @@
       "entry_price": 428.7699890136719,
       "entry_date": "2026-02-11T09:30:17.991889",
       "asset_type": "stock",
-      "current_price": 418.67999267578125,
+      "current_price": 417.7250061035156,
       "high_since_entry": 434.56500244140625
     },
     "ADBE": {
@@ -37,7 +37,7 @@
       "entry_price": 264.6700134277344,
       "entry_date": "2026-02-11T09:46:08.996473",
       "asset_type": "stock",
-      "current_price": 253.0,
+      "current_price": 252.19000244140625,
       "high_since_entry": 264.6700134277344
     },
     "NVDA": {
@@ -46,7 +46,7 @@
       "entry_price": 191.53990173339844,
       "entry_date": "2026-02-11T10:01:33.872203",
       "asset_type": "stock",
-      "current_price": 190.1508026123047,
+      "current_price": 189.9499969482422,
       "high_since_entry": 193.02000427246094
     },
     "MSFT": {
@@ -55,7 +55,7 @@
       "entry_price": 404.4599914550781,
       "entry_date": "2026-02-11T10:17:28.307445",
       "asset_type": "stock",
-      "current_price": 403.5299987792969,
+      "current_price": 402.9049987792969,
       "high_since_entry": 405.5
     },
     "CRM": {
@@ -64,7 +64,7 @@
       "entry_price": 193.4499969482422,
       "entry_date": "2026-02-11T15:54:20.625819",
       "asset_type": "stock",
-      "current_price": 181.80499267578125,
+      "current_price": 181.2449951171875,
       "high_since_entry": 193.4499969482422
     },
     "XLV": {
@@ -73,8 +73,8 @@
       "entry_price": 156.47999572753906,
       "entry_date": "2026-02-12T11:17:53.914586",
       "asset_type": "etf",
-      "current_price": 156.5800018310547,
-      "high_since_entry": 156.6199951171875
+      "current_price": 156.83999633789062,
+      "high_since_entry": 156.83999633789062
     },
     "PYPL": {
       "symbol": "PYPL",
@@ -82,7 +82,7 @@
       "entry_price": 40.459999084472656,
       "entry_date": "2026-02-12T12:04:08.517921",
       "asset_type": "stock",
-      "current_price": 38.63999938964844,
+      "current_price": 38.625,
       "high_since_entry": 40.459999084472656
     }
   },
