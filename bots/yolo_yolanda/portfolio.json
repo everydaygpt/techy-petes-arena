@@ -2,7 +2,7 @@
   "starting_cash": 10000.0,
   "cash": 2.2920073587503964,
   "created_at": "2026-02-10T17:00:53.480968",
-  "last_updated": "2026-02-12T12:50:21.458033",
+  "last_updated": "2026-02-12T17:51:06.830163",
   "positions": {
     "MARA": {
       "symbol": "MARA",
@@ -10,7 +10,7 @@
       "entry_price": 7.590000152587891,
       "entry_date": "2026-02-11T09:30:49.796942",
       "asset_type": "stock",
-      "current_price": 7.284999847412109,
+      "current_price": 7.2600998878479,
       "high_since_entry": 7.78000020980835
     },
     "AMC": {
@@ -19,7 +19,7 @@
       "entry_price": 1.3300000429153442,
       "entry_date": "2026-02-11T09:30:49.801222",
       "asset_type": "stock",
-      "current_price": 1.2549999952316284,
+      "current_price": 1.25,
       "high_since_entry": 1.3350000381469727
     },
     "SOL-USD": {
@@ -28,7 +28,7 @@
       "entry_price": 82.01968383789062,
       "entry_date": "2026-02-11T09:30:49.805580",
       "asset_type": "crypto",
-      "current_price": 78.17138671875,
+      "current_price": 78.18012237548828,
       "high_since_entry": 82.01968383789062
     },
     "DOT-USD": {
@@ -37,7 +37,7 @@
       "entry_price": 1.2710944414138794,
       "entry_date": "2026-02-11T09:30:49.810117",
       "asset_type": "crypto",
-      "current_price": 1.263941764831543,
+      "current_price": 1.2623965740203857,
       "high_since_entry": 1.2940548658370972
     },
     "DOGE-USD": {
@@ -46,7 +46,7 @@
       "entry_price": 0.09100040793418884,
       "entry_date": "2026-02-11T09:30:49.814149",
       "asset_type": "crypto",
-      "current_price": 0.09172289073467255,
+      "current_price": 0.09169725328683853,
       "high_since_entry": 0.0942424088716507
     },
     "ARKK": {
@@ -55,7 +55,7 @@
       "entry_price": 68.6500015258789,
       "entry_date": "2026-02-12T11:02:48.667607",
       "asset_type": "stock",
-      "current_price": 68.19999694824219,
+      "current_price": 68.08499908447266,
       "high_since_entry": 68.68000030517578
     },
     "BB": {
@@ -64,7 +64,7 @@
       "entry_price": 3.4049999713897705,
       "entry_date": "2026-02-12T11:02:48.669570",
       "asset_type": "stock",
-      "current_price": 3.38700008392334,
+      "current_price": 3.389699935913086,
       "high_since_entry": 3.418600082397461
     },
     "F": {
@@ -73,7 +73,7 @@
       "entry_price": 14.093000411987305,
       "entry_date": "2026-02-12T11:02:48.671672",
       "asset_type": "stock",
-      "current_price": 13.975000381469727,
+      "current_price": 13.96500015258789,
       "high_since_entry": 14.104999542236328
     }
   },
