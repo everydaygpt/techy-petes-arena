@@ -2,7 +2,7 @@
   "starting_cash": 10000.0,
   "cash": 2.286202589463098,
   "created_at": "2026-02-10T17:00:53.480968",
-  "last_updated": "2026-02-13T10:32:43.608179",
+  "last_updated": "2026-02-13T10:32:47.277674",
   "positions": {
     "MARA": {
       "symbol": "MARA",
@@ -10,8 +10,8 @@
       "entry_price": 7.590000152587891,
       "entry_date": "2026-02-11T09:30:49.796942",
       "asset_type": "stock",
-      "current_price": 7.894999980926514,
-      "high_since_entry": 7.894999980926514
+      "current_price": 7.8979997634887695,
+      "high_since_entry": 7.8979997634887695
     },
     "SOL-USD": {
       "symbol": "SOL-USD",
@@ -46,8 +46,8 @@
       "entry_price": 68.6500015258789,
       "entry_date": "2026-02-12T11:02:48.667607",
       "asset_type": "stock",
-      "current_price": 71.06999969482422,
-      "high_since_entry": 71.06999969482422
+      "current_price": 71.0999984741211,
+      "high_since_entry": 71.0999984741211
     },
     "BB": {
       "symbol": "BB",
@@ -73,7 +73,7 @@
       "entry_price": 206.40499877929688,
       "entry_date": "2026-02-12T15:54:22.934176",
       "asset_type": "stock",
-      "current_price": 208.49659729003906,
+      "current_price": 208.51499938964844,
       "high_since_entry": 208.6132049560547
     },
     "PLUG": {
@@ -82,7 +82,7 @@
       "entry_price": 1.8250000476837158,
       "entry_date": "2026-02-12T15:54:22.938568",
       "asset_type": "stock",
-      "current_price": 1.9149999618530273,
+      "current_price": 1.910099983215332,
       "high_since_entry": 1.916599988937378
     },
     "SHIB-USD": {
