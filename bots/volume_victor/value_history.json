@@ -803,5 +803,26 @@
     "cash": 7001.569426173402,
     "positions_value": 2935.7183207229614,
     "num_positions": 2
+  },
+  {
+    "timestamp": "2026-02-13T09:46:05.188504",
+    "total_value": 9942.967104576112,
+    "cash": 7001.569426173402,
+    "positions_value": 2941.39767840271,
+    "num_positions": 2
+  },
+  {
+    "timestamp": "2026-02-13T14:46:05.206512",
+    "total_value": 9942.967104576112,
+    "cash": 7001.569426173402,
+    "positions_value": 2941.39767840271,
+    "num_positions": 2
+  },
+  {
+    "timestamp": "2026-02-13T09:46:13.329839",
+    "total_value": 9944.203897628784,
+    "cash": 7001.569426173402,
+    "positions_value": 2942.6344714553834,
+    "num_positions": 2
   }
 ]
