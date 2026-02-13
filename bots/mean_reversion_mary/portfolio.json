@@ -2,7 +2,7 @@
   "starting_cash": 10000.0,
   "cash": 3959.3369189347386,
   "created_at": "2026-02-10T17:00:53.479469",
-  "last_updated": "2026-02-13T19:09:29.664687",
+  "last_updated": "2026-02-13T14:20:22.083394",
   "positions": {
     "SPY": {
       "symbol": "SPY",
@@ -10,7 +10,7 @@
       "entry_price": 696.3900146484375,
       "entry_date": "2026-02-11T09:30:37.258461",
       "asset_type": "etf",
-      "current_price": 684.97998046875,
+      "current_price": 684.8599853515625,
       "high_since_entry": 696.9199829101562
     },
     "NVDA": {
@@ -19,7 +19,7 @@
       "entry_price": 188.5399932861328,
       "entry_date": "2026-02-11T09:46:25.160151",
       "asset_type": "stock",
-      "current_price": 184.02499389648438,
+      "current_price": 183.78700256347656,
       "high_since_entry": 193.0
     },
     "ORCL": {
@@ -28,7 +28,7 @@
       "entry_price": 157.52000427246094,
       "entry_date": "2026-02-12T09:30:20.535443",
       "asset_type": "stock",
-      "current_price": 161.35000610351562,
+      "current_price": 160.94400024414062,
       "high_since_entry": 161.76499938964844
     },
     "XLV": {
@@ -37,7 +37,7 @@
       "entry_price": 157.0500030517578,
       "entry_date": "2026-02-12T10:32:00.804739",
       "asset_type": "etf",
-      "current_price": 158.2050018310547,
+      "current_price": 158.310302734375,
       "high_since_entry": 158.63999938964844
     },
     "ADA-USD": {
@@ -46,8 +46,8 @@
       "entry_price": 0.2714175581932068,
       "entry_date": "2026-02-13T10:32:40.244862",
       "asset_type": "crypto",
-      "current_price": 0.2725304067134857,
-      "high_since_entry": 0.27331122756004333
+      "current_price": 0.27337098121643066,
+      "high_since_entry": 0.27337098121643066
     }
   },
   "trade_history": [
