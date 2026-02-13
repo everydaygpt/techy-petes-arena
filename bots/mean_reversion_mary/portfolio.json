@@ -1,8 +1,8 @@
 {
   "starting_cash": 10000.0,
-  "cash": 5150.908257444763,
+  "cash": 3959.3369189347386,
   "created_at": "2026-02-10T17:00:53.479469",
-  "last_updated": "2026-02-13T10:31:20.702029",
+  "last_updated": "2026-02-13T10:32:40.244882",
   "positions": {
     "SPY": {
       "symbol": "SPY",
@@ -10,7 +10,7 @@
       "entry_price": 696.3900146484375,
       "entry_date": "2026-02-11T09:30:37.258461",
       "asset_type": "etf",
-      "current_price": 683.72998046875,
+      "current_price": 683.6199951171875,
       "high_since_entry": 696.9199829101562
     },
     "NVDA": {
@@ -19,7 +19,7 @@
       "entry_price": 188.5399932861328,
       "entry_date": "2026-02-11T09:46:25.160151",
       "asset_type": "stock",
-      "current_price": 184.45989990234375,
+      "current_price": 184.61500549316406,
       "high_since_entry": 193.0
     },
     "ORCL": {
@@ -28,7 +28,7 @@
       "entry_price": 157.52000427246094,
       "entry_date": "2026-02-12T09:30:20.535443",
       "asset_type": "stock",
-      "current_price": 159.80999755859375,
+      "current_price": 159.77999877929688,
       "high_since_entry": 159.80999755859375
     },
     "XLV": {
@@ -37,8 +37,17 @@
       "entry_price": 157.0500030517578,
       "entry_date": "2026-02-12T10:32:00.804739",
       "asset_type": "etf",
-      "current_price": 158.0850067138672,
+      "current_price": 158.0800018310547,
       "high_since_entry": 158.2449951171875
+    },
+    "ADA-USD": {
+      "symbol": "ADA-USD",
+      "quantity": 4390.1778,
+      "entry_price": 0.2714175581932068,
+      "entry_date": "2026-02-13T10:32:40.244862",
+      "asset_type": "crypto",
+      "current_price": 0.2714175581932068,
+      "high_since_entry": 0.2714175581932068
     }
   },
   "trade_history": [
@@ -109,6 +118,17 @@
       "asset_type": "stock",
       "reason": "Stop loss triggered (-4.0% loss)",
       "cash_after": 5150.908257444763
+    },
+    {
+      "timestamp": "2026-02-13T10:32:40.244876",
+      "action": "BUY",
+      "symbol": "ADA-USD",
+      "quantity": 4390.1778,
+      "price": 0.2714175581932068,
+      "total": 1191.5713385100246,
+      "asset_type": "crypto",
+      "reason": "RSI approaching oversold (35.5) | MACD bullish crossover",
+      "cash_after": 3959.3369189347386
     }
   ]
 }
