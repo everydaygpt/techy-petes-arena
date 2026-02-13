@@ -2,7 +2,7 @@
   "starting_cash": 10000.0,
   "cash": 7001.569426173402,
   "created_at": "2026-02-10T17:00:53.480207",
-  "last_updated": "2026-02-13T10:17:11.156408",
+  "last_updated": "2026-02-13T10:31:22.718131",
   "positions": {
     "VOO": {
       "symbol": "VOO",
@@ -10,7 +10,7 @@
       "entry_price": 640.4000244140625,
       "entry_date": "2026-02-11T09:46:17.159411",
       "asset_type": "etf",
-      "current_price": 626.0499877929688,
+      "current_price": 628.7999877929688,
       "high_since_entry": 640.4000244140625
     },
     "NVDA": {
@@ -19,7 +19,7 @@
       "entry_price": 188.5399932861328,
       "entry_date": "2026-02-11T10:17:33.492585",
       "asset_type": "stock",
-      "current_price": 182.52789306640625,
+      "current_price": 184.45989990234375,
       "high_since_entry": 193.11959838867188
     }
   },
