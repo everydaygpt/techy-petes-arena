@@ -2,7 +2,7 @@
   "starting_cash": 10000.0,
   "cash": 2.286202589463098,
   "created_at": "2026-02-10T17:00:53.480968",
-  "last_updated": "2026-02-13T12:52:26.652360",
+  "last_updated": "2026-02-13T12:52:30.662591",
   "positions": {
     "MARA": {
       "symbol": "MARA",
@@ -10,7 +10,7 @@
       "entry_price": 7.590000152587891,
       "entry_date": "2026-02-11T09:30:49.796942",
       "asset_type": "stock",
-      "current_price": 8.012999534606934,
+      "current_price": 8.009900093078613,
       "high_since_entry": 8.012999534606934
     },
     "SOL-USD": {
@@ -46,7 +46,7 @@
       "entry_price": 68.6500015258789,
       "entry_date": "2026-02-12T11:02:48.667607",
       "asset_type": "stock",
-      "current_price": 70.7249984741211,
+      "current_price": 70.72000122070312,
       "high_since_entry": 71.0999984741211
     },
     "BB": {
@@ -64,7 +64,7 @@
       "entry_price": 14.093000411987305,
       "entry_date": "2026-02-12T11:02:48.671672",
       "asset_type": "stock",
-      "current_price": 14.204999923706055,
+      "current_price": 14.194999694824219,
       "high_since_entry": 14.305000305175781
     },
     "AMD": {
@@ -73,7 +73,7 @@
       "entry_price": 206.40499877929688,
       "entry_date": "2026-02-12T15:54:22.934176",
       "asset_type": "stock",
-      "current_price": 208.74000549316406,
+      "current_price": 208.73500061035156,
       "high_since_entry": 208.74000549316406
     },
     "PLUG": {
@@ -82,7 +82,7 @@
       "entry_price": 1.8250000476837158,
       "entry_date": "2026-02-12T15:54:22.938568",
       "asset_type": "stock",
-      "current_price": 1.9249999523162842,
+      "current_price": 1.9199999570846558,
       "high_since_entry": 1.934999942779541
     },
     "SHIB-USD": {
