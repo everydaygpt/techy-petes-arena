@@ -2,7 +2,7 @@
   "starting_cash": 10000.0,
   "cash": 2.286202589463098,
   "created_at": "2026-02-10T17:00:53.480968",
-  "last_updated": "2026-02-13T17:21:28.215109",
+  "last_updated": "2026-02-13T12:33:28.995879",
   "positions": {
     "MARA": {
       "symbol": "MARA",
@@ -10,8 +10,8 @@
       "entry_price": 7.590000152587891,
       "entry_date": "2026-02-11T09:30:49.796942",
       "asset_type": "stock",
-      "current_price": 7.90500020980835,
-      "high_since_entry": 7.90500020980835
+      "current_price": 7.979899883270264,
+      "high_since_entry": 7.979899883270264
     },
     "SOL-USD": {
       "symbol": "SOL-USD",
@@ -19,7 +19,7 @@
       "entry_price": 82.01968383789062,
       "entry_date": "2026-02-11T09:30:49.805580",
       "asset_type": "crypto",
-      "current_price": 84.10557556152344,
+      "current_price": 84.24303436279297,
       "high_since_entry": 84.4278564453125
     },
     "DOT-USD": {
@@ -28,7 +28,7 @@
       "entry_price": 1.2710944414138794,
       "entry_date": "2026-02-11T09:30:49.810117",
       "asset_type": "crypto",
-      "current_price": 1.323840618133545,
+      "current_price": 1.3263534307479858,
       "high_since_entry": 1.3284108638763428
     },
     "DOGE-USD": {
@@ -37,8 +37,8 @@
       "entry_price": 0.09100040793418884,
       "entry_date": "2026-02-11T09:30:49.814149",
       "asset_type": "crypto",
-      "current_price": 0.09631405770778656,
-      "high_since_entry": 0.09657798707485199
+      "current_price": 0.09663119912147522,
+      "high_since_entry": 0.09663119912147522
     },
     "ARKK": {
       "symbol": "ARKK",
@@ -46,7 +46,7 @@
       "entry_price": 68.6500015258789,
       "entry_date": "2026-02-12T11:02:48.667607",
       "asset_type": "stock",
-      "current_price": 70.83999633789062,
+      "current_price": 70.87000274658203,
       "high_since_entry": 71.0999984741211
     },
     "BB": {
@@ -64,7 +64,7 @@
       "entry_price": 14.093000411987305,
       "entry_date": "2026-02-12T11:02:48.671672",
       "asset_type": "stock",
-      "current_price": 14.239999771118164,
+      "current_price": 14.204999923706055,
       "high_since_entry": 14.305000305175781
     },
     "AMD": {
@@ -73,8 +73,8 @@
       "entry_price": 206.40499877929688,
       "entry_date": "2026-02-12T15:54:22.934176",
       "asset_type": "stock",
-      "current_price": 208.25999450683594,
-      "high_since_entry": 208.6132049560547
+      "current_price": 208.67999267578125,
+      "high_since_entry": 208.67999267578125
     },
     "PLUG": {
       "symbol": "PLUG",
@@ -82,8 +82,8 @@
       "entry_price": 1.8250000476837158,
       "entry_date": "2026-02-12T15:54:22.938568",
       "asset_type": "stock",
-      "current_price": 1.9249999523162842,
-      "high_since_entry": 1.9249999523162842
+      "current_price": 1.9321999549865723,
+      "high_since_entry": 1.9321999549865723
     },
     "SHIB-USD": {
       "symbol": "SHIB-USD",
@@ -91,7 +91,7 @@
       "entry_price": 5.951820639893413e-06,
       "entry_date": "2026-02-12T15:54:22.944425",
       "asset_type": "crypto",
-      "current_price": 6.318116447801003e-06,
+      "current_price": 6.334070803859504e-06,
       "high_since_entry": 6.354458491841797e-06
     }
   },
